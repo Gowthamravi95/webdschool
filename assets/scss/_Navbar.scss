@@ -1,0 +1,197 @@
+.navbar-wrapper {
+    nav {
+        background-color: rgba(26, 26, 26, 0.8);
+
+        .nav-main {
+            height: 80px;
+            @include flex-align;
+
+            .courses {
+                @include button-style;
+                transform: scale(0.8);
+                cursor: pointer;
+                transition: all 0.4s;
+                margin-left: auto;
+                &:hover {
+                    background-color: white;
+                    color: $pink-clr;
+        
+                }
+                i{
+                    transition:all 0.4s;
+                }
+                .arrow180{
+                    transform: rotate(180deg);
+                }
+                .arrow0{
+                    transform: rotate(180deg);
+                }
+          
+            }
+
+            .logo {
+                transform: scale(0.8);
+
+            }
+
+            .collapse-icon {
+                color: rgba(256, 256, 256, 0.8);
+                margin: 0 5px 0 20px;
+                font-size: 1.4rem;
+                cursor: pointer;
+
+            }
+        }
+
+        .navlinks {
+            background-color: #1a1a1a;
+            height: 100%;
+            display: none;
+
+            ul {
+                padding: 10px;
+                li {
+                    padding: 15px;
+                    border-bottom: 1px solid rgba(256, 256, 256, 0.1);
+                    @include flex-align;
+                    justify-content: flex-start;
+                    cursor: pointer;
+
+                    i,
+                    svg {
+                        font-size: $fs-extra;
+                        transition: all 0.2s;
+                        color: rgba(256, 256, 256, 0.8);
+                        height: 24px;
+
+                    }
+
+                    svg {
+                        fill: rgba(256, 256, 256, 0.8);
+                    }
+
+                    .active {
+                        color: $pink-clr;
+                        fill: $pink-clr;
+                    opacity: 1;
+
+
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: rgba(256, 256, 256, 0.8);
+                        font-size: $fs-regular;
+                        font-family: $ff-workSans;
+                        height: 100%;
+                        padding: 0 20px;
+
+                        i {
+                            margin-left: 5px;
+                            margin-top: 2px;
+                            position: unset;
+                            font-size: $fs-regular;
+                            display: block;
+                        }
+
+                    }
+
+                    &:hover {
+                        background-color: rgba(256, 256, 256, 0.1);
+
+                    }
+
+                    &:nth-child(8) {
+                        border: none;
+                    }
+                    &:last-of-type{
+                        display: none;
+                    }
+                }
+
+                .active-li {
+                    background-color: rgba(256, 256, 256, 0.1);
+                    // background-color: rgba(237,135,34,0.1);
+                    border: none;
+                }
+
+            
+            }
+
+
+        }
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .navbar-wrapper {
+        nav {
+            @include flex-align;
+            justify-content: flex-start;
+            .nav-main {
+                height: 90px;
+                padding-top: 15px;
+                    .collapse-icon {
+                        display: none;
+
+                    }
+                }
+
+                .navlinks {
+                height: 90px;
+                padding-top: 15px;
+
+                    background-color: transparent !important;
+                    display: block !important;
+                    @include flex-align;
+                    
+                    ul{
+                        height: 100%;
+                        gap: 30px;
+
+                     @include flex-align;
+                     padding: 0px;
+                     
+                     li{
+                        padding: 0px;
+                        border: none;
+                        height: 100%;
+                        background-color: transparent !important;
+                        position: relative;
+
+                        i,svg{
+                            position: absolute;
+                            top: 0px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            opacity: 0;
+                        }
+                        a{
+                            @include flex-align;
+                            padding: 0 0;
+                        }
+                        &:nth-child(7),&:nth-child(8){
+                            display: none;
+                        }
+                        &:last-of-type{
+                            display: block;
+                            a i{
+                                padding: 3px 0 0 15px ;
+                                opacity: 1 !important;
+                            }
+                            
+                            }
+                     }
+                    
+                        
+                    }
+
+                }
+            }
+
+        }
+
+
+
+    }

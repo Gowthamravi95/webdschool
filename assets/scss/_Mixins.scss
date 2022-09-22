@@ -1,0 +1,23 @@
+
+@mixin flex-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin button-style {
+    background-color: $pink-clr;
+    border-radius: 5px;
+    color: white;
+    font-family: $ff-montserrat;
+    font-weight: $bold;
+    font-size: $fs-medium;
+    text-align: center;
+    padding: 14px 28px;
+    i{
+        margin-left: 8px;
+    }
+  
+    
+}
