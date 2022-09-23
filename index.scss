@@ -30,7 +30,9 @@ button{
 .container{
     padding: 0 5px;
 }
-
+a{
+    all: unset;
+}
 @media screen and (min-width:576px) {
 
     .container{

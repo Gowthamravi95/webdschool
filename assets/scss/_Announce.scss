@@ -7,7 +7,7 @@
             font-size: $fs-regular;
             color: $lightBlack-clr;
             letter-spacing: 1px;
-            padding: 10px;
+            padding: 6px;
             span {
                 font-weight: $bold;
             }
@@ -45,6 +45,10 @@
     .announce-wrapper {
         .announce {
             @include flex-align;
+            p{
+              padding: 10px;
+
+            }
             div{
                 min-width: 350px;
                 justify-content: flex-start;

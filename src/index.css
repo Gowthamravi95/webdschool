@@ -19,6 +19,10 @@ button {
   padding: 0 5px;
 }
 
+a {
+  all: unset;
+}
+
 @media screen and (min-width: 576px) {
   .container {
     padding: 0 10px;
@@ -50,10 +54,10 @@ button {
   font-family: "Work Sans", sans-serif;
 }
 .announce-wrapper .announce p {
-  font-size: 17px;
+  font-size: 0.9375rem;
   color: #505050;
   letter-spacing: 1px;
-  padding: 10px;
+  padding: 6px;
 }
 .announce-wrapper .announce p span {
   font-weight: 700;
@@ -92,6 +96,9 @@ button {
     justify-content: center;
     align-items: center;
   }
+  .announce-wrapper .announce p {
+    padding: 10px;
+  }
   .announce-wrapper .announce div {
     min-width: 350px;
     justify-content: flex-start;
@@ -105,40 +112,88 @@ button {
   background-color: rgba(26, 26, 26, 0.8);
 }
 .navbar-wrapper nav .nav-main {
-  height: 80px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.navbar-wrapper nav .nav-main .courses {
+.navbar-wrapper nav .nav-main .course {
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-left: auto;
+  position: relative;
+}
+.navbar-wrapper nav .nav-main .course button {
   background-color: #FF2359;
   border-radius: 5px;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-align: center;
   padding: 14px 28px;
+  transition: all 0.2s;
   transform: scale(0.8);
-  cursor: pointer;
-  transition: all 0.4s;
-  margin-left: auto;
 }
-.navbar-wrapper nav .nav-main .courses i {
+.navbar-wrapper nav .nav-main .course button i {
   margin-left: 8px;
 }
-.navbar-wrapper nav .nav-main .courses:hover {
-  background-color: white;
-  color: #FF2359;
-}
-.navbar-wrapper nav .nav-main .courses i {
+.navbar-wrapper nav .nav-main .course i {
   transition: all 0.4s;
 }
-.navbar-wrapper nav .nav-main .courses .arrow180 {
-  transform: rotate(180deg);
+.navbar-wrapper nav .nav-main .course .dropdown {
+  position: absolute;
+  top: 60px;
+  right: -40px;
+  display: none;
 }
-.navbar-wrapper nav .nav-main .courses .arrow0 {
-  transform: rotate(180deg);
+.navbar-wrapper nav .nav-main .course .dropdown:before {
+  content: "";
+  width: 300%;
+  height: 20px;
+  position: absolute;
+  top: -20px;
+  left: -240px;
+  background-color: transparent;
+}
+.navbar-wrapper nav .nav-main .course .courses-drop-menu {
+  background-color: #1a1a1a;
+}
+.navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.8);
+  width: 130px;
+  height: 60px;
+}
+.navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list li ul {
+  background-color: #1a1a1a;
+  position: absolute;
+  top: 0;
+  left: -200px;
+}
+.navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list li ul li {
+  justify-content: start;
+  padding-left: 10px;
+  width: 200px;
+}
+.navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list li ul li:hover {
+  background-color: aqua;
+}
+.navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list li:nth-child(1) ul {
+  display: none;
+}
+.navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list li:nth-child(2) ul {
+  display: none;
 }
 .navbar-wrapper nav .nav-main .logo {
   transform: scale(0.8);
@@ -158,7 +213,7 @@ button {
   padding: 10px;
 }
 .navbar-wrapper nav .navlinks ul li {
-  padding: 15px;
+  padding: 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
@@ -166,15 +221,11 @@ button {
   justify-content: flex-start;
   cursor: pointer;
 }
-.navbar-wrapper nav .navlinks ul li i,
 .navbar-wrapper nav .navlinks ul li svg {
-  font-size: 22px;
-  transition: all 0.2s;
-  color: rgba(255, 255, 255, 0.8);
   height: 24px;
-}
-.navbar-wrapper nav .navlinks ul li svg {
+  transition: all 0.2s;
   fill: rgba(255, 255, 255, 0.8);
+  height: 24px;
 }
 .navbar-wrapper nav .navlinks ul li .active {
   color: #FF2359;
@@ -184,7 +235,7 @@ button {
 .navbar-wrapper nav .navlinks ul li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 17px;
+  font-size: 0.9375rem;
   font-family: "Work Sans", sans-serif;
   height: 100%;
   padding: 0 20px;
@@ -193,7 +244,7 @@ button {
   margin-left: 5px;
   margin-top: 2px;
   position: unset;
-  font-size: 17px;
+  font-size: 0.9375rem;
   display: block;
 }
 .navbar-wrapper nav .navlinks ul li:hover {
@@ -215,18 +266,17 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: flex-start;
+    gap: 30px;
   }
   .navbar-wrapper nav .nav-main {
-    height: 90px;
-    padding-top: 15px;
+    padding: 15px 0;
   }
   .navbar-wrapper nav .nav-main .collapse-icon {
     display: none;
   }
   .navbar-wrapper nav .navlinks {
-    height: 90px;
-    padding-top: 15px;
+    padding: 15px 0;
+    height: 70px;
     background-color: transparent !important;
     display: block !important;
     display: flex;
@@ -235,7 +285,7 @@ button {
   }
   .navbar-wrapper nav .navlinks ul {
     height: 100%;
-    gap: 30px;
+    gap: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,18 +298,20 @@ button {
     background-color: transparent !important;
     position: relative;
   }
-  .navbar-wrapper nav .navlinks ul li i, .navbar-wrapper nav .navlinks ul li svg {
+  .navbar-wrapper nav .navlinks ul li svg {
+    height: 18px;
     position: absolute;
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
-    opacity: 0;
+    opacity: 0.2;
   }
   .navbar-wrapper nav .navlinks ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 0;
+    align-items: flex-end;
   }
   .navbar-wrapper nav .navlinks ul li:nth-child(7), .navbar-wrapper nav .navlinks ul li:nth-child(8) {
     display: none;
@@ -267,8 +319,11 @@ button {
   .navbar-wrapper nav .navlinks ul li:last-of-type {
     display: block;
   }
+  .navbar-wrapper nav .navlinks ul li:last-of-type svg {
+    transform: translateX(-100%);
+  }
   .navbar-wrapper nav .navlinks ul li:last-of-type a i {
-    padding: 3px 0 0 15px;
+    font-size: 13px;
     opacity: 1 !important;
   }
 }/*# sourceMappingURL=index.css.map */

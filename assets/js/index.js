@@ -1,6 +1,7 @@
 
 
 
+        // console.log('working');
 
 
 
@@ -18,24 +19,13 @@ $(document).ready(() => {
         $('.announce-wrapper').hide();
     })
 
-    // navlink click diplay icon and bottom line 
-    // $('.navlinks ul li a').each(function () {
-    //     let content = $(this).html();
-    //     let html = content + '&nbsp; <span class="bar"></span>';
-    //     $(this).after()
-    // })
-    $('.courses').click(function(){
-        $(this).children().children().toggleClass('arrow180')
-        
+    $('.course').mouseenter(function(){
+        $(this).children('button').css({"background-color": "white", "color": "#FF2359"})
+        $(this).children('button').children().css({"transform": "rotate(180deg)"})
     })
-    $('.courses').mouseenter(function(){
-        $(this).children().children().toggleClass('arrow180')
-    })
-    $('.courses').mouseleave(function(){
-        // $(this).children().children().css({"transform": "rotate(0deg)"})
-        // console.log('working');
-        $(this).children().children().toggleClass('arrow180')
-
+    $('.course ').mouseleave(function(){
+        $(this).children('button').css({"background-color": "#FF2359", "color": "white"})
+        $(this).children('button').children().css({"transform": "rotate(0deg)"})
     })
 
 
@@ -44,27 +34,25 @@ $(document).ready(() => {
 
 $('.navlinks ul li ').click(function () {
 
-    
-   
-
     $('.navlinks ul li a').removeClass("active");
     $('.navlinks ul li i').removeClass("active");
     $('.navlinks ul li svg').removeClass("active");
     $('.navlinks ul li ').removeClass("active-li");
     $(this).addClass("active-li");
-    // $('.navlinks ul li svg').removeClass("on");
-    // $('.navlinks ul li i').removeClass("on");
     $(this).children().addClass("active");
-    // $(this).child("svg").addClass("active");
-    // $(this).child("a").addClass("active");
     if ($(window).width() < 1200){
         $('.navlinks').slideToggle();
-        console.log("working")
-
     }
 
 })
 
+$('.courses-drop-menu .course-list .courses').hover(function(){
+    $(this).children().toggle()
 
+})
+$('.course').hover(function(){
+       
+    $(this).children(".dropdown").toggle()
+})
 
 })
