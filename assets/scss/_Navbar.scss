@@ -41,23 +41,29 @@
                 }
                 
                 .courses-drop-menu {
-                    background-color: #1a1a1a;
-
+                    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
                     .course-list{
                         @include flex-align;
                         flex-direction: column;
                         position: relative;
                         
+
                         li{
                             @include flex-align;
                             font-size: $fs-regular;
-                            color: rgba(256, 256, 256, 0.8);
+                            color: rgba(26, 26, 26, 0.8);
                             width: 130px;
                             height: 60px;
-                           
-                            ul{
-                                 background-color: #1a1a1a;
+                            &:hover{
+                                color: $pink-clr;
+                            }
+                            div{
+                                display: none;
 
+                            }
+                            ul{
+                                box-shadow: 0px 1px 15px -3px rgba(0,0,0,0.1);
+                                
                                 position: absolute;
                                 top: 0;
                                 left: -200px;
@@ -67,7 +73,7 @@
                                     width: 200px;
                     
                                     &:hover{
-                                        background-color: aqua;
+                                        background-color: rgba(220,53,69,0.1);
                             
 
                                     }
@@ -75,19 +81,7 @@
                 
                             }
                         }
-                        li:nth-child(1){
-                           ul{
-                            display: none;
-                           
-                
-                           }
-                        }
-                        li:nth-child(2){
-                          ul{
-                            display: none;
-                          }
-                
-                        }
+                        
                     }
                 
                 }
@@ -144,7 +138,7 @@
 
                     a {
                         text-decoration: none;
-                        color: rgba(256, 256, 256, 0.8);
+                        color: rgba(256, 256, 256);
                         font-size: $fs-regular;
                         font-family: $ff-workSans;
                         height: 100%;
@@ -197,7 +191,40 @@
 
             .nav-main {
                 padding: 15px  0;
-
+                .course{
+                    .dropdown {
+                        top: 60px;
+                        right: 0px;
+                    }
+                    
+                    .courses-drop-menu {
+                        .course-list{
+                            @include flex-align;
+                            flex-direction: column;
+                            position: relative;
+                            
+                            li{
+                                width: 150px;
+                                ul{
+                                    @include flex-align;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 150px;
+                                    li{
+                                        justify-content: center;
+                                        width: 125px;
+                                        height: 120px;
+                                        padding: 10px;
+                                        text-align: center;
+                                    }
+                    
+                                }
+                            }
+                        }
+                    
+                    }
+    
+                }
                 .collapse-icon {
                     display: none;
 
@@ -254,6 +281,15 @@
                             a i {
                                 font-size: 13px;
                                 opacity: 1 !important;
+                            }
+                            &:hover{
+                                svg{
+                                    fill: $pink-clr;
+                                    opacity: 1;
+                                }
+                                a{
+                                    color: $pink-clr;
+                                }
                             }
 
                         }

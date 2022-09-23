@@ -23,10 +23,6 @@ a {
   all: unset;
 }
 
-*:focus {
-  all: unset;
-}
-
 @media screen and (min-width: 576px) {
   .container {
     padding: 0 10px;
@@ -161,7 +157,7 @@ a {
   background-color: transparent;
 }
 .navbar-wrapper nav .nav-main .course .courses-drop-menu {
-  background-color: #1a1a1a;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 .navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list {
   display: flex;
@@ -175,12 +171,18 @@ a {
   justify-content: center;
   align-items: center;
   font-size: 0.9375rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(26, 26, 26, 0.8);
   width: 130px;
   height: 60px;
 }
+.navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list li:hover {
+  color: #FF2359;
+}
+.navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list li div {
+  display: none;
+}
 .navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list li ul {
-  background-color: #1a1a1a;
+  box-shadow: 0px 1px 15px -3px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 0;
   left: -200px;
@@ -191,13 +193,7 @@ a {
   width: 200px;
 }
 .navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list li ul li:hover {
-  background-color: aqua;
-}
-.navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list li:nth-child(1) ul {
-  display: none;
-}
-.navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list li:nth-child(2) ul {
-  display: none;
+  background-color: rgba(220, 53, 69, 0.1);
 }
 .navbar-wrapper nav .nav-main .logo {
   transform: scale(0.8);
@@ -238,7 +234,7 @@ a {
 }
 .navbar-wrapper nav .navlinks ul li a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255, 255, 255);
   font-size: 0.9375rem;
   font-family: "Work Sans", sans-serif;
   height: 100%;
@@ -274,6 +270,35 @@ a {
   }
   .navbar-wrapper nav .nav-main {
     padding: 15px 0;
+  }
+  .navbar-wrapper nav .nav-main .course .dropdown {
+    top: 60px;
+    right: 0px;
+  }
+  .navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list li {
+    width: 150px;
+  }
+  .navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list li ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 150px;
+  }
+  .navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list li ul li {
+    justify-content: center;
+    width: 125px;
+    height: 120px;
+    padding: 10px;
+    text-align: center;
   }
   .navbar-wrapper nav .nav-main .collapse-icon {
     display: none;
@@ -329,5 +354,12 @@ a {
   .navbar-wrapper nav .navlinks ul li:last-of-type a i {
     font-size: 13px;
     opacity: 1 !important;
+  }
+  .navbar-wrapper nav .navlinks ul li:last-of-type:hover svg {
+    fill: #FF2359;
+    opacity: 1;
+  }
+  .navbar-wrapper nav .navlinks ul li:last-of-type:hover a {
+    color: #FF2359;
   }
 }/*# sourceMappingURL=index.css.map */
