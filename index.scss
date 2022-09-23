@@ -33,6 +33,9 @@ button{
 a{
     all: unset;
 }
+*:focus{
+    all: unset;
+}
 @media screen and (min-width:576px) {
 
     .container{
