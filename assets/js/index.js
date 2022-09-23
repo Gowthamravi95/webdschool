@@ -1,7 +1,6 @@
 
 
 
-        // console.log('working');
 
 
 
@@ -56,3 +55,66 @@ $('.course').hover(function(){
 })
 
 })
+
+
+        // console.log('working');
+
+
+
+
+        let svg=[
+            
+                {
+                    id:"1",
+                    svg:''
+                },
+                {
+                    id:"2",
+                },
+                {
+                    id:"3",
+                },
+                {
+                    id:"4",
+                },
+            ]
+        
+
+
+$(document).ready(() => {
+
+svg.map((e)=>{
+    console.log(e.id)
+})
+
+
+
+})
+
+
+
+
+$(document).ready(function () {
+  
+    
+     var c, currentScrollTop = 0,
+         topbar = $('.top-bar');
+  
+     $(window).scroll(function () {
+        var a = $(window).scrollTop();
+        var b = topbar.height();
+
+        currentScrollTop = a;
+       
+        if (c < currentScrollTop && a > b + b) {
+          topbar.addClass("hide")
+        } else if (c > currentScrollTop && !(a <= b)) {
+          topbar.removeClass("hide");
+
+        }
+        c = currentScrollTop;
+
+       
+    });
+    
+  });

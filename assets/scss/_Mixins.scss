@@ -4,7 +4,13 @@
     justify-content: center;
     align-items: center;
 }
+@mixin base-style{
+    font-size: $fs-regular;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    color: $lightBlack-clr;
 
+}
 
 @mixin button-style {
     background-color: $pink-clr;
