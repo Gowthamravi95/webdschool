@@ -118,3 +118,25 @@ $(document).ready(function () {
     });
     
   });
+
+
+
+  $(document).ready(() => {
+    function resizetopbarheight(){
+        var prevHeight=$('.top-bar').height();
+        $('.main').css({"marginTop":prevHeight + "px"});
+        
+    }
+   
+    resizetopbarheight();
+
+   $(window).resize(()=>{
+    resizetopbarheight();
+
+      
+   })
+   
+
+
+})
+    

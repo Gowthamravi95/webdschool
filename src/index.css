@@ -169,6 +169,7 @@ a {
 }
 .navbar-wrapper nav .nav-main .course .courses-drop-menu {
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 .navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list {
   display: flex;
@@ -194,6 +195,7 @@ a {
 }
 .navbar-wrapper nav .nav-main .course .courses-drop-menu .course-list li ul {
   box-shadow: 0px 1px 15px -3px rgba(0, 0, 0, 0.1);
+  background-color: white;
   position: absolute;
   top: 0;
   left: -200px;
@@ -355,6 +357,9 @@ a {
   .navbar-wrapper nav .navlinks ul li:nth-child(7), .navbar-wrapper nav .navlinks ul li:nth-child(8) {
     display: none;
   }
+  .navbar-wrapper nav .navlinks ul li:hover a {
+    color: #FF2359;
+  }
   .navbar-wrapper nav .navlinks ul .more-link {
     position: relative;
     display: block;
@@ -365,6 +370,7 @@ a {
     right: -40px;
     display: none;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background-color: white;
   }
   .navbar-wrapper nav .navlinks ul .more-link .dropdown2:before {
     content: "";
@@ -412,5 +418,84 @@ a {
   }
   .navbar-wrapper nav .navlinks ul .more-link:hover a {
     color: #FF2359;
+  }
+}
+.hero .banner-wrapper {
+  position: relative;
+  z-index: -50;
+  background-color: #1a1a1a;
+  height: 350px;
+  width: 100vw;
+}
+.hero .banner-wrapper img {
+  width: 100vw;
+  min-height: 500px;
+}
+.hero .banner-wrapper::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.hero .banner-wrapper h1 {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  color: white;
+  z-index: 1;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  width: 100vw;
+}
+.hero .banner-wrapper h1 span {
+  font-size: 40px;
+  color: #1E90FF;
+}
+
+@media screen and (min-width: 576px) {
+  .hero .banner-wrapper h1 {
+    font-size: 22px;
+  }
+  .hero .banner-wrapper h1 span {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero .banner-wrapper h1 {
+    font-size: 24px;
+  }
+  .hero .banner-wrapper h1 span {
+    font-size: 52px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero .banner-wrapper img {
+    height: 500px;
+  }
+  .hero .banner-wrapper h1 {
+    font-size: 26px;
+  }
+  .hero .banner-wrapper h1 span {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero .banner-wrapper h1 {
+    font-size: 28px;
+  }
+  .hero .banner-wrapper h1 span {
+    font-size: 64px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero .banner-wrapper h1 {
+    font-size: 32px;
+  }
+  .hero .banner-wrapper h1 span {
+    font-size: 74px;
   }
 }/*# sourceMappingURL=index.css.map */
