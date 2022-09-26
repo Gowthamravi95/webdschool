@@ -136,7 +136,17 @@ $(document).ready(function () {
       
    })
    
-
-
+$('.companies').slick({
+    autoplay: true,
+     autoplaySpeed: 0,
+     speed: 20000,
+     cssEase: 'linear',
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  pauseOnFocus: false,
+  pauseOnHover: false
+})
+$('.slick-prev').text("");
+$('.slick-next').text("");
 })
     

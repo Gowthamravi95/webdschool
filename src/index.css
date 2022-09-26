@@ -498,4 +498,18 @@ a {
   .hero .banner-wrapper h1 span {
     font-size: 74px;
   }
+}
+.companies-wrapper .slick-slider {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.companies-wrapper .slick-slider .slick-prev {
+  content: "";
+}
+
+.companies-wrapper .companies {
+  padding: 50px 0;
 }/*# sourceMappingURL=index.css.map */
