@@ -9,6 +9,7 @@
     line-height: 1.7;
     letter-spacing: 1px;
     color: $lightBlack-clr;
+   
 
 }
 
@@ -24,6 +25,11 @@
     i{
         margin-left: 8px;
     }
-  
+    &:hover{
+        background-color: white;
+        color: $pink-clr;
+        border: 1px solid $pink-clr;
+    }
+    cursor: pointer;
     
 }

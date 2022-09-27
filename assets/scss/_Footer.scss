@@ -1,7 +1,7 @@
 .footer-wrapper{
     background-color: #1a1a1a;
     @include flex-align;
-
+padding: 30px;
     .footer{
         font-family: $ff-montserrat;
         color: rgba(256,256,256,0.7);
@@ -39,8 +39,11 @@
 
         }
         .sec1{
+            align-items: flex-start;
+
             .sub-sec{
                 width: 300px;
+                padding: 20px;
             }
            .sub-sec:nth-child(1){
             .heading{
@@ -59,7 +62,7 @@
             div{
                 i,svg{
                     font-size: 20px;
-                    border: 1px solid $yellow-clr;
+                    border: 1px solid rgba(256,256,256,0.7);
                     border-radius: 50%;
                      padding: 12px;
                 }

@@ -17,6 +17,8 @@ $(document).ready(() => {
 
     $('.close').click(() => {
         $('.announce-wrapper').hide();
+        resizetopbarheight();
+
     })
 
     $('.course').mouseenter(function () {
@@ -56,23 +58,24 @@ $(document).ready(() => {
         $(' .navlinks').hide();
         
     })
-    $('.courses-drop-menu .course-list  .online').click(function () {
-        $(this).children().toggle()
-        $(this).next().children().hide()
+
+    // $('.courses-drop-menu .course-list  .online').click(function () {
+    //     $(this).children().toggle()
+    //     $(this).next().children().hide()
        
-    })
-    $('.courses-drop-menu .course-list  .offline').click(function () {
-        $(this).children().toggle()
-        $(this).prev().children().hide()
+    // })
+    // $('.courses-drop-menu .course-list  .offline').click(function () {
+    //     $(this).children().toggle()
+    //     $(this).prev().children().hide()
 
        
-    })
-    $('.course button').click(function () {
+    // })
+    // $('.course button').click(function () {
 
-        $(this).parent().children(".dropdown").toggle()
-        $(' .navlinks').hide();
+    //     $(this).parent().children(".dropdown").toggle()
+    //     $(' .navlinks').hide();
 
-    })
+    // })
 
 
 
@@ -87,9 +90,10 @@ $(document).ready(() => {
         currentScrollTop = a;
 
         if (c < currentScrollTop && a > b + b) {
-            topbar.addClass("hide")
+            topbar.css({"transform":"translateY(" +  b*-1.2 + "px)" })
         } else if (c > currentScrollTop && !(a <= b)) {
-            topbar.removeClass("hide");
+            topbar.css({"transform":"translateY(" + 0 + "px)" })
+
 
         }
         c = currentScrollTop;
@@ -133,3 +137,67 @@ $(document).ready(() => {
 
 
 })
+
+
+
+
+
+
+$(document).ready(()=>{
+
+    const review=[
+        {
+            id:1,
+            rating:"5.0",
+            img: './assets/public/images/Facebook.png',
+            star:'<i class="bi bi-star-fill"></i>',
+
+        },
+        {
+            id:2,
+            rating:4.8,
+            img: './assets/public/images/google.png',
+            star:'<i class="bi bi-star-fill"></i>',
+
+        },
+        {
+            id:3,
+            rating:4.6,
+            img: './assets/public/images/justdial.png',
+            star:'<i class="bi bi-star-fill"></i>',
+
+        },
+        {
+            id:4,
+            rating:4.5,
+            img: './assets/public/images/sulekha.png',
+            star:'<i class="bi bi-star-fill"></i>',
+
+        },
+        {
+            id:5,
+            rating:"5.0",
+            img: './assets/public/images/edugorilla.png',
+            star:'<i class="bi bi-star-fill"></i>',
+
+        }
+    ]
+
+
+
+    $.each(review, function( key, e ) {
+        $('.review-box-wrapper').append('<div class="review-box"><div class="rating">' + e.rating  +'</div><div class="platform"><div class="logo"> <img src=' + e.img + ` altr=""></div> <div class="star">` + e.star + e.star + e.star + e.star + e.star + `</div></div></div>`);
+
+      });
+      
+        
+        
+
+   
+    
+
+
+})
+
+
+

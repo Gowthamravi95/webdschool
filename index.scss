@@ -38,9 +38,7 @@ a{
     top: 0;
     width: 100%;
     transition: all 0.5s;
-}
-.hide{
-    transform: translateY(-120px);
+    z-index: 9999;
 }
 
 
@@ -126,3 +124,4 @@ a{
 @import './assets/scss/Hero';
 @import './assets/scss/Companies';
 @import './assets/scss/Footer';
+@import './assets/scss/Testimonal';
