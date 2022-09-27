@@ -1,0 +1,113 @@
+.footer-wrapper{
+    background-color: #1a1a1a;
+    @include flex-align;
+
+    .footer{
+        font-family: $ff-montserrat;
+        color: rgba(256,256,256,0.7);
+        padding: 20px;
+        @include flex-align;
+        flex-wrap: wrap;
+        gap: 30px;
+        i{
+            color: $yellow-clr;
+            opacity: 0.8;
+            font-size: 16px;
+        }
+        span{
+            color: $lightBlue-clr;
+        }
+        .heading{
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        color: rgba(256,256,256,0.9);
+
+           
+        }
+        .content{
+            font-size: 14px;
+           
+        }
+        p{
+            margin-bottom: 10px;
+        }
+        .sec1,.sec2,.sec3{
+            @include flex-align;
+            flex-wrap: wrap;
+            gap: 30px;
+
+        }
+        .sec1{
+            .sub-sec{
+                width: 300px;
+            }
+           .sub-sec:nth-child(1){
+            .heading{
+                font-size: 24px;
+                font-weight: 700;
+                color: white;
+
+            }
+           }
+
+        }
+        .sec2{
+            i{
+                margin-right: 10px;
+            }
+            div{
+                i,svg{
+                    font-size: 20px;
+                    border: 1px solid $yellow-clr;
+                    border-radius: 50%;
+                     padding: 12px;
+                }
+                svg{
+                    height: 20px;
+                    fill: $yellow-clr;
+                    opacity: 0.8;
+                }
+            }
+        }
+        .sec3{
+            gap: 0px;
+            p{
+                border-right: 1px solid rgba(256,256,256,0.7);
+                padding: 0 20px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:670px) {
+    .sec2{
+      width: 300px;
+    }
+    
+}
+@media screen and (min-width:1000px) {
+    .sec2{
+      width: auto;
+    }
+    
+}
+@media screen and (min-width:1200px) {
+   .sec1{
+    .sub-sec{
+        width: 350px !important;
+      
+      }
+      
+   }
+}
+@media screen and (min-width:1400px) {
+    .sec1{
+     .sub-sec{
+         width: 400px !important;
+       
+       }
+       
+    }
+ }

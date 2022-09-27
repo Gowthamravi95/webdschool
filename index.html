@@ -6,24 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebD School | Learn Online </title>
-    <link rel="stylesheet" href="./src/index.css">
     <link rel="icon" href="./assets/public/images/index.png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/plugins/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./src/index.css">
+    <script>
+        /*to prevent Firefox FOUC, this must be here*/
+        let FF_FOUC_FIX;
+    </script>
 </head>
 
 <body>
     <div style="height: 200vh;">
-        
+
         <div class="top-bar" style="background-color: white;">
             <div class="announce-wrapper ">
                 <div class="announce container ">
                     <p>New Batch for Web Design & Development <span>Starts in 3 Days</span> </p>
                     <div>
                         <p>| call us <span><i class="bi bi-telephone-outbound-fill"></i> +91 9791 3333 50</span></p>
-    
+
                         <button class="close"><i class="bi bi-x-lg"></i></button>
                     </div>
                 </div>
@@ -38,7 +41,7 @@
                             <button> Courses<i class=" fa-solid fa-chevron-down"></i></button>
                             <div class="dropdown courses-drop-menu">
                                 <div class="course-list">
-                                    <li class="courses">Online Courses
+                                    <li class="courses online">Online Courses
                                         <div>
                                             <ul>
                                                 <li><a href="">Web Design & Development</a></li>
@@ -49,7 +52,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="courses">Offline Courses
+                                    <li class="courses offline">Offline Courses
                                         <div>
                                             <ul>
                                                 <li><a href="">Advanced graphic design</a></li>
@@ -65,13 +68,13 @@
                                 </div>
                             </div>
                         </div>
-    
-    
+
+
                         <div class="collapse-icon">
                             <i class="fa-solid fa-bars"></i>
                         </div>
                     </div>
-    
+
                     <div class="navlinks ">
                         <ul>
                             <li class="active-li">
@@ -84,7 +87,7 @@
                                 </svg>
                                 <a href="#" class="active">Home</a>
                             </li>
-    
+
                             <li>
                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 779.11 779.11"
@@ -100,23 +103,23 @@
                                                 d="M765.197,309.111c-10.744-3.681-22.439,2.049-26.123,12.794l-87.209,254.59H339.803c-11.356,0-20.567,9.206-20.567,20.564s9.211,20.566,20.567,20.566h326.507c6.994,0,13.168-3.503,16.879-8.841c1.283-1.694,2.33-3.607,3.059-5.729L778,335.225C781.67,324.486,775.947,312.79,765.197,309.111z" />
                                         </g>
                                     </g>
-    
+
                                 </svg>
                                 <a href="#">Student Works</a>
                                 <div></div>
                             </li>
-    
+
                             <li>
-    
+
                                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 122.88 97.84">
                                     <path class="cls-1"
                                         d="M29.83,85V48.11H46.44c7,1.26,14.08,5.08,21.12,9.51h12.9c5.84.36,8.89,6.27,3.22,10.16-4.52,3.32-10.49,3.13-16.6,2.58-4.22-.21-4.41,5.47,0,5.48,1.52.12,3.18-.24,4.64-.24,7.63,0,13.92-1.46,17.77-7.5l1.93-4.51,19.19-9.51C120.21,50.92,127,61,120,67.94A251.48,251.48,0,0,1,77.23,93.1c-10.58,6.44-21.17,6.22-31.76,0L29.83,85ZM57.71,6.57H72.52V2.32A2.32,2.32,0,0,1,74.84,0h17a2.32,2.32,0,0,1,2.32,2.32V6.57h14.81a3.27,3.27,0,0,1,2.31,1,3.31,3.31,0,0,1,1,2.32V18a73.14,73.14,0,0,1-11.39,6.41,64.63,64.63,0,0,1-12.73,4.21V25.56a2.46,2.46,0,0,0-2.46-2.46H81a2.46,2.46,0,0,0-2.46,2.46v3a64.46,64.46,0,0,1-12.42-4.14A73.75,73.75,0,0,1,54.43,17.8v-8a3.29,3.29,0,0,1,3.28-3.28ZM90,3.17H76.61a.27.27,0,0,0-.2.08.31.31,0,0,0-.09.21v3h14v-3a.29.29,0,0,0-.09-.21A.3.3,0,0,0,90,3.17ZM85.61,25.29H81a.26.26,0,0,0-.19.08.22.22,0,0,0-.08.19v9.7a.29.29,0,0,0,.08.19.25.25,0,0,0,.19.07h4.59a.29.29,0,0,0,.19-.07.25.25,0,0,0,.08-.19v-9.7a.26.26,0,0,0-.08-.19.22.22,0,0,0-.19-.08Zm2.46,6.84a1.61,1.61,0,0,0,.37,0,69.06,69.06,0,0,0,14-4.56,75.88,75.88,0,0,0,9.77-5.29V44a3.23,3.23,0,0,1-1,2.31,3.27,3.27,0,0,1-2.31,1H57.71a3.23,3.23,0,0,1-2.31-1,3.27,3.27,0,0,1-1-2.31V22a75.59,75.59,0,0,0,10.09,5.49,69.06,69.06,0,0,0,14,4.56h.06v3.16A2.46,2.46,0,0,0,79.28,37a2.42,2.42,0,0,0,1.74.72h4.59A2.42,2.42,0,0,0,87.35,37a2.46,2.46,0,0,0,.72-1.73V32.13ZM2.17,44.56H22.66a2.18,2.18,0,0,1,2.17,2.18V86.57a2.18,2.18,0,0,1-2.17,2.17H2.17A2.18,2.18,0,0,1,0,86.57V46.74a2.18,2.18,0,0,1,2.17-2.18Zm10.25,6.71A3.23,3.23,0,1,1,9.19,54.5a3.23,3.23,0,0,1,3.23-3.23Z" />
                                 </svg>
-    
+
                                 <a href="#">Placements</a>
                             </li>
-    
+
                             <li>
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
@@ -142,10 +145,10 @@
                                         </g>
                                     </g>
                                 </svg>
-    
+
                                 <a href="#">Testimonals</a>
                             </li>
-    
+
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor"
                                     class="bi bi-person-workspace" viewBox="0 0 16 16">
@@ -154,24 +157,24 @@
                                     <path
                                         d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z" />
                                 </svg>
-    
+
                                 <a href="#">Job Portal</a>
                             </li>
                             <li>
-    
+
                                 <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M688.010562 935.276733c-2.06996 28.351446-21.396582 52.71297-49.023042 61.779793l-85.928322 24.959513c-35.584305 8.575833-71.572602-12.629753-80.36143-47.359075a82.558388 82.558388 0 0 1-0.853984-3.839925c-10.303799-36.820281 9.962805-75.198531 46.677089-88.382274l85.928321-24.916513a62.931771 62.931771 0 0 1 63.230765 17.40766 328.740579 328.740579 0 0 0 155.346966-143.933189h-21.866573c-69.054651-3.690928-122.067616-61.140806-118.610683-128.53149V473.802746c-3.413933-67.368684 49.577032-124.797563 118.610683-128.48749h29.631422c4.244917 0 8.489834 0.233995 12.692752 0.724985C795.614461 167.44073 608.418117 60.541818 425.402691 107.260905c-119.80566 30.569403-213.371833 121.87462-244.71022 238.779336a109.437863 109.437863 0 0 1 12.671752-0.725985h29.652421c68.969653 3.754927 121.897619 61.161805 118.483686 128.48849v128.487491c3.433933 67.391684-49.557032 124.840562-118.611683 128.531489H193.236226c-68.948653-3.754927-121.87462-61.097807-118.504686-128.402492V473.802746c0-3.327935 0-6.65587 0.341994-9.940806a58.473858 58.473858 0 0 1-0.341994-6.101881C74.73154 204.539005 270.909709 0 512.034999 0c241.14729 0 437.325458 204.540005 437.325459 457.761059 0 2.02696-0.127998 4.07492-0.362993 6.101881 0 3.284936 0.362993 6.612871 0.362993 9.940806v128.48749a131.987422 131.987422 0 0 1-49.279038 104.297963C864.283119 807.790223 787.677616 890.34861 688.010562 935.147735v0.127998z" />
                                 </svg>
-    
+
                                 <a href="#">Contact</a>
                             </li>
                             <li>
-    
+
                                 <svg width="20" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256"
                                     viewBox="0 0 256 256" xml:space="preserve">
-    
+
                                     <defs>
                                     </defs>
                                     <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;"
@@ -182,12 +185,12 @@
                                             transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
                                     </g>
                                 </svg>
-    
+
                                 <a href="#">Blog</a>
                             </li>
                             <li>
-    
-    
+
+
                                 <svg width="20" height="24" fill="currentColor" viewBox="0 0 1024 1024" version="1.1"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -195,7 +198,7 @@
                                 </svg>
                                 <a href="#">Infrastructure</a>
                             </li>
-    
+
                             <li class="more-link">
                                 <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -218,23 +221,85 @@
             <div class="hero">
                 <div class="banner-wrapper">
                     <!-- <img src="./assets/public/images/banner.jpg" alt=""> -->
-                    <h1>Advance Your 
+                    <h1>Advance Your
                         Career, Learn <br>
-                        <span>In-demand Skills.</span></h1>
+                        <span>In-demand Skills.</span>
+                    </h1>
                 </div>
             </div>
             <div class="companies-wrapper">
+                
+                <div><h2>Our Webdians work in <span>100+ Companies</span></h2></div>
                 <div class="companies">
-                    <img src="./assets/public/images/Row_1.png" alt="">
-                    <img src="./assets/public/images/Row_2.png" alt="">
-                    <img src="./assets/public/images/Row_3.png" alt="">
+                    <img src="./assets/public/images/1-c.png" alt="">
+                    <img src="./assets/public/images/4-c.png" alt="">
+                    <img src="./assets/public/images/5-c.png" alt="">
+
                 </div>
+                <div><button>View all</button></div>
             </div>
         </div>
 
 
 
-        <div class="footer">
+        <div class="footer-wrapper">
+            <div class="footer container">
+                <div class="sec1">
+                    <div class="sub-sec">
+                        <div class="heading">
+                            <i class="bi bi-geo-alt-fill"></i> WEB D SCHOOL
+                        </div>
+                        <div class="content">
+                            No.30, 1st floor,
+                            SSR PankajamTowers, Arunachalam Road, saligramam,
+                            Chennai- 600 093.
+                        </div>
+                    </div>
+                    <div class="sub-sec">
+                        <div class="heading">
+                            Our institute is within <span>5 km radius</span>
+                            from these following areas
+                        </div>
+                        <div class="content">
+                            Vadapalani, Virugambakkam, Valasaravakkam, Alwarthirunagar, Saligramam, Ashok Nagar,
+                            KK Nagar, Guindy. T Nagar, Choolaimedu,
+                            Kodambakkam Nungambakkam, Mambalam, Arumbakkam, Anna Nagar, Mogappair, Porur.
+                        </div>
+                    </div>
+                    <div class="sub-sec">
+                        <div class="heading">
+                            How It Works ? / How to Join Course ?
+
+
+                        </div>
+                        <div class="content">
+                            <p><span>Choose any Course</span> - Explore the courses and their unique benefits.
+                                Select one that suits you</p>
+                            <p><span>Book Your Seat</span> - Select Batch, Date and book your seat before
+                                batch starts</p>
+                            <p><span>Great! Start Learn</span> - All set. Enjoy your new Journey</p>
+                        </div>
+
+                    </div>
+                    <div class="sec2 ">
+                        <p><i class="bi bi-telephone-fill"></i> +91 9791 3333 50</p>
+                        <p> <i class="bi bi-telephone-fill"></i> +04 4443 2133 50</p>
+                        <p><i class="bi bi-envelope-fill"></i>info@webdschool.com</p>
+                        <div><i class="fa-brands fa-facebook-f"></i>
+       
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i><i class="bi bi-twitter"></i><i class="bi bi-youtube"></i></div>
+                    </div>
+                </div>
+
+                <div class="sec3">
+                    <p><img src="./assets/public/images/Artboard6.png" height="30px" alt=""></p>
+                    <p>© WebDSchool 2022</p>
+                    <p>Privacy</p>
+                    <p>Terms</p>
+                    <p>Sitemap</p>
+                </div>
+            </div>
 
         </div>
 
@@ -251,9 +316,11 @@
 
 
     </div>
-    <script src="./assets/js/index.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-				
+    <script type="text/javascript" src="./assets/plugins/jquery/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="./assets/plugins/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+
+
 
 </body>
 

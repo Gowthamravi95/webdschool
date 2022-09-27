@@ -13,8 +13,8 @@
 
                 button {
                     @include button-style;
+                    font-size: 17px;
                     transition: all 0.2s;
-                    transform: scale(0.8);
                     i {
                         transition: all 0.4s;
                     }
