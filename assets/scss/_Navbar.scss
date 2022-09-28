@@ -1,7 +1,8 @@
 .navbar-wrapper {
+    width: 100vw;
+
     nav {
         background-color: rgba(26, 26, 26, 0.8);
-        width: 100vw;
         .nav-main {
             height: 70px;
             @include flex-align;

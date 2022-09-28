@@ -4,6 +4,10 @@
 /* Fonts */
 /* Font Weights */
 /* Spacing */
+body {
+  width: 100vw;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,9 +30,13 @@ a {
 .top-bar {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   transition: all 0.5s;
   z-index: 9999;
+}
+
+.main {
+  width: 100vw;
 }
 
 @media screen and (min-width: 576px) {
@@ -118,9 +126,11 @@ a {
     right: 0;
   }
 }
+.navbar-wrapper {
+  width: 100vw;
+}
 .navbar-wrapper nav {
   background-color: rgba(26, 26, 26, 0.8);
-  width: 100vw;
 }
 .navbar-wrapper nav .nav-main {
   height: 70px;
@@ -845,7 +855,7 @@ a {
   align-items: center;
   position: absolute;
   bottom: -65px;
-  width: 100% !important;
+  width: 100px !important;
 }
 .student-review-wrapper .slick-prev::before, .student-review-wrapper .slick-next::before {
   font-family: FontAwesome;
