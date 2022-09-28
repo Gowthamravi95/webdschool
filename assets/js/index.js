@@ -130,10 +130,47 @@ $(document).ready(() => {
         adaptiveHeight: true,
         infinte:true,
     })
-    $('.slick-prev').text("");
-    $('.slick-next').text("");
+   
 
 
+    $('.student-review-wrapper').slick({
+        autoplay: true,
+        autoplaySpeed: 1500,
+        cssEase: 'linear',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinte:true,
+        centerPadding: "80px",
+        centerMode: true,
+        speed: 1200,
+        dots: true,
+        reponsive:[
+            {
+                    breakpoint: 450,
+                        settings: {
+                      centerPadding: '60px',
+                    }
+                  },
+          
+        ]
+        // prevArrow:`<button class="slick-prev"></button>`,
+        // nextArrow: '<button class="slick-next"></button>'
+        // responsive: [
+        //  {
+        //     breakpoint: 576,
+        //         settings: {
+        //       centerPadding: '65px',
+        //       slidesToShow: 1,
+        //     }
+        //   },
+        // ]
+
+    })
+
+    $('.student-review-wrapper .slick-next').text("");
+    $('.student-review-wrapper .slick-prev').text("");
+    $('.student-review-wrapper .slick-dots li').text("");
+    $('.student-review-wrapper .slick-dots li').append(`<i class="fa-solid fa-circle"></i>`);
 
 
 })
@@ -193,7 +230,7 @@ $(document).ready(()=>{
         
         
 
-   
+     
     
 
 
