@@ -38,15 +38,13 @@ a{
 .top-bar{
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
 
     transition: all 0.5s;
     z-index: 9999;
 }
 
-.main{
-    width: 100vw;
-}
+
 
 
 // * {
