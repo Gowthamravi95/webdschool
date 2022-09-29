@@ -1,0 +1,123 @@
+.companies-wrapper{
+    padding: 50px;
+   div:nth-child(1){
+    @include flex-align;
+    h2{
+        text-align: center;
+        color: #505050;
+        font-size: 22px;
+        width: 300px;
+        span{
+            color: $lightBlue-clr;
+            font-size: 24px;
+        }
+    }
+   }
+    .companies{
+        padding: 50px 0; 
+        position: relative;
+        z-index: -2;
+       
+    }
+    .slick-slider{
+        margin: auto;
+        img{
+            height: 150px;
+        }
+        button{
+            display: none !important;
+        }
+   }
+   div:nth-child(3){
+    @include flex-align;
+    max-width: 1200PX;
+    justify-content: end;
+    margin:auto;
+    button{
+        @include button-style;
+        font-size: 16px;
+       }
+
+   }
+
+}
+
+
+
+@media screen and (min-width:576px) {
+
+    div:nth-child(1){
+        h2{
+            font-size: 24px !important;
+            span{
+                font-size: 26px !important;
+            }
+        }
+       }
+}
+@media screen and (min-width:768px) {
+    div:nth-child(1){
+        h2{
+            width: auto !important;
+            font-size: 26px !important;
+            span{
+                font-size: 28px !important;
+            }
+        }
+       }
+
+    
+}
+@media screen and (min-width:992px) {
+
+    div:nth-child(1){
+        h2{
+        
+            font-size: 28px !important;
+            span{
+                font-size: 30px !important;
+            }
+        }
+       }
+.companies-wrapper{
+    .slick-slider{
+        width: 80vw !important;
+      
+   }
+
+}
+
+    
+}
+@media screen and (min-width:1200px) {
+    div:nth-child(1){
+        h2{
+            font-size: 30px !important;
+            span{
+                font-size: 32px !important;
+            }
+        }
+       }
+       .companies-wrapper{
+        .slick-slider{
+            width: 75vw !important;
+
+          
+       }
+    
+    }
+
+
+}
+@media screen and (min-width:1400px) {
+    div:nth-child(1){
+        h2{
+            font-size: 34px !important;
+            span{
+                font-size: 36px !important;
+            }
+        }
+       }
+
+   
+}

@@ -1,0 +1,147 @@
+.hero{
+    .banner-wrapper{
+        position: relative;
+        z-index: -50;
+        background-color: #1a1a1a;
+        height: 350px;
+        width: 100vw;
+        img{
+            width: 100vw;
+            min-height: 500px;
+        }
+        &::after{
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0,0,0,0.6);
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+        h1{
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            color: white;
+            z-index: 1;
+            font-size: 20px;
+            font-family: $ff-montserrat;
+            text-align: center;
+            width: 100vw;
+            span{
+                font-size: 40px;
+                color: $lightBlue-clr;
+
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:576px) {
+
+    .hero{
+        .banner-wrapper{
+            img{
+            }
+            &::after{
+             
+            }
+            h1{
+                font-size: 22px;
+                span{
+                  font-size: 48px;
+    
+                }
+            }
+        }
+    
+    }
+}
+@media screen and (min-width:768px) {
+    .hero{
+        .banner-wrapper{
+            img{
+            }
+            &::after{
+             
+            }
+            h1{
+                font-size: 24px;
+            
+                span{
+                  font-size: 52px;
+    
+                }
+            }
+        }
+    
+    }
+    
+}
+@media screen and (min-width:992px) {
+
+    .hero{
+        .banner-wrapper{
+            img{
+            height: 500px;
+
+            }
+            &::after{
+             
+            }
+            h1{
+                font-size: 26px;
+            
+                span{
+                  
+                    font-size: 60px;
+    
+                }
+            }
+        }
+    
+    }
+}
+@media screen and (min-width:1200px) {
+    .hero{
+        .banner-wrapper{
+            img{
+            }
+            &::after{
+             
+            }
+            h1{
+                font-size: 28px;
+            
+                span{
+                  
+                    font-size: 64px;
+    
+                }
+            }
+        }
+    
+    }
+}
+@media screen and (min-width:1400px) {
+    .hero{
+        .banner-wrapper{
+            img{
+            }
+            &::after{
+             
+            }
+            h1{
+                font-size: 32px;
+                span{
+                    font-size: 74px;
+                  
+    
+                }
+            }
+        }
+    
+    }
+   
+}

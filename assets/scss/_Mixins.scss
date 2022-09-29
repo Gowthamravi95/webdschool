@@ -1,0 +1,42 @@
+
+@mixin flex-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin base-style{
+    font-size: $fs-regular;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    color: $lightBlack-clr;
+   
+
+}
+
+@mixin button-style {
+    background-color: $pink-clr;
+    border-radius: 5px;
+    color: white;
+    font-family: $ff-montserrat;
+    font-weight: $bold;
+    text-align: center;
+    height: 40px;
+    width: 150px;
+    i{
+        margin-left: 8px;
+    }
+    &:hover{
+        background-color: white;
+        color: $pink-clr;
+        border: 1px solid $pink-clr;
+    }
+    cursor: pointer;
+    
+}
+
+@mixin  position-align {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
