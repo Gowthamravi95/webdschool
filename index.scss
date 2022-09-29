@@ -126,9 +126,35 @@ a{
 
 
 @import './assets/scss/Mixins';
+
+
+
+
+.cta-viewall{
+    @include flex-align;
+    max-width: 1200PX;
+    justify-content: end;
+    button{
+        @include button-style;
+        font-size: 16px;
+       }
+
+   }
+
+
+
+
+
+
 @import './assets/scss/Announce';
 @import './assets/scss/Navbar';
 @import './assets/scss/Hero';
 @import './assets/scss/Companies';
 @import './assets/scss/Footer';
 @import './assets/scss/Testimonal';
+@import './assets/scss/SocialReviews';
+@import './assets/scss/StudentReviewsHorizontal';
+@import './assets/scss/StudentReviewsVertical';
+
+
+

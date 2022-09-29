@@ -1,0 +1,186 @@
+
+.testimonal-wrapper {
+    .testimonal {
+        .review-box-wrapper {
+            position: relative;
+            width: 360px;
+            height: 360px;
+            @include position-align;
+        
+            &:before {
+                content: "";
+                background: transparent;
+                width: 250px;
+                height: 250px;
+                border: 15px solid $lightBlue-clr;
+                position: absolute;
+                border-radius: 50%;
+                box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+                box-shadow: inset 0px 4px 30px rgba(0, 0, 0, 0.25);
+                @include position-align;
+        
+            }
+        
+            .review-box {
+                position: absolute;
+                @include position-align;
+        
+                transform: scale(0.6);
+                background-color: white;
+                padding: 10px;
+                @include flex-align;
+                gap: 20px;
+                box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+                width: 220px;
+                border-radius: 5px;
+        
+                .rating {
+                    font-size: 26px;
+                    font-family: $ff-roboto;
+                    color: $lightBlue-clr;
+                }
+        
+                .platform {
+                    border-left: 1px solid rgba(26, 26, 26, 0.4);
+                    padding-left: 20px;
+        
+                    .logo {
+                        img {
+                            height: 22px;
+                            width: 115px;
+                        }
+                    }
+        
+                    .star {
+                        color: $yellow-clr;
+                        @include flex-align;
+                        justify-content: space-around;
+                        font-size: 14px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        
+            .review-box:nth-child(1) {
+                top: 4em;
+                left: -1em;
+            }
+        
+            .review-box:nth-child(2) {
+                top: 9.5em;
+                left: -2em;
+            }
+        
+            .review-box:nth-child(3) {
+                top: 15em;
+                left: -1em;
+            }
+        
+            .review-box:nth-child(4) {
+                top: 6em;
+                left: 10em;
+            }
+        
+            .review-box:nth-child(5) {
+                top: 12em;
+                left: 10em;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width:576px) {
+ 
+   
+    .review-box-wrapper {
+
+        &:before {
+            height: 280px !important;
+            width: 280px !important;
+        }
+    }
+
+    .review-box {
+
+        transform: scale(0.7) !important;
+
+    }
+
+    .review-box:nth-child(1) {
+        top: 3em !important;
+        left: -2em !important;
+    }
+
+    .review-box:nth-child(2) {
+        top: 9.5em !important;
+        left: -4em !important;
+    }
+
+    .review-box:nth-child(3) {
+        top: 16em !important;
+        left: -2em !important;
+    }
+
+    .review-box:nth-child(4) {
+        top: 5em !important;
+        left: 12em !important;
+    }
+
+    .review-box:nth-child(5) {
+        top: 13em !important;
+        left: 12em !important;
+    }
+
+}
+
+
+@media screen and (min-width:1400px) {
+  
+
+    
+    .review-box-wrapper {
+
+        &:before {
+            height: 320px !important;
+            width: 320px !important;
+        }
+    }
+
+    .review-box {
+
+        transform: scale(0.8) !important;
+
+    }
+
+    .review-box:nth-child(1) {
+        top: 2em !important;
+        left: -3em !important;
+    }
+
+    .review-box:nth-child(2) {
+        top: 9em !important;
+        left: -6em !important;
+    }
+
+    .review-box:nth-child(3) {
+        top: 16em !important;
+        left: -3em !important;
+    }
+
+    .review-box:nth-child(4) {
+        top: 4.5em !important;
+        left: 13em !important;
+    }
+
+    .review-box:nth-child(5) {
+        top: 13.5em !important;
+        left: 13em !important;
+    }
+
+
+}
+
+
+

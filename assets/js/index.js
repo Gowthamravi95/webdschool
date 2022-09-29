@@ -129,7 +129,7 @@ $(document).ready(() => {
     $(window).resize(() => {
         resizetopbarheight();
 
-
+      
     })
 
     $('.companies').slick({
@@ -152,7 +152,7 @@ $(document).ready(() => {
         autoplaySpeed: 1500,
         cssEase: 'linear',
         infinte: true,
-        centerPadding: "80px",
+        centerPadding: "140px",
         centerMode: true,
         speed: 1200,
         dots: true,
@@ -163,26 +163,72 @@ $(document).ready(() => {
         nextArrow: `<button class="slick-next" aria-label="Next" type="button"></button>`,
         responsive: [
             {
-                breakpoint: 576,
+                breakpoint: 550,
                 settings: {
                     centerPadding: '80px',
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                   
                     
                 },
-                breakpoint: 450,
+            },
+
+            {
+            
+             
+                
+                breakpoint: 500,
                 settings: {
                     centerPadding: '60px',
 
 
                 }
             },
-
         ]
 
     })
 
+
+})
+
+
+
+
+
+$('.student-review-wrapper-vertical').slick({
+    autoplay: true,
+    autoplaySpeed: 1500,
+    cssEase: 'linear',
+    infinte: true,
+    centerPadding: "80px",
+    centerMode: true,
+    speed: 1200,
+    dots: true,
+    vertical:true,
+    verticalSwiping: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    customPaging: function (slider, i) {
+        return $('<button type="button" />').text("");
+    },
+    prevArrow: `<button class="slick-prev" aria-label="Previous" type="button"></button>`,
+    nextArrow: `<button class="slick-next" aria-label="Next" type="button"></button>`,
+    // responsive: [
+    //     {
+    //         breakpoint: 576,
+    //         settings: {
+    //             centerPadding: '80px',
+    //             slidesToShow: 1,
+    //             slidesToScroll: 1,
+               
+                
+    //         },
+    //         breakpoint: 450,
+    //         settings: {
+    //             centerPadding: '60px',
+
+
+    //         }
+    //     },
+
+    // ]
 
 })
 

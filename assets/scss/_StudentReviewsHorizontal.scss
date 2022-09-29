@@ -1,0 +1,200 @@
+.student-review-wrapper {
+    @include flex-align;
+    width: 360px !important;
+
+    .slick-list {
+        padding-left: 0px !important;
+    }
+
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        bottom: -40px;
+        cursor: pointer;
+
+        &::before {
+            font-family: "bootstrap-icons";
+            font-size: 24px;
+
+        }
+
+        z-index: 2;
+    }
+
+    .slick-prev {
+        left: 25%;
+
+        &::before {
+            content: "\F12A";
+        }
+    }
+
+    .slick-next {
+        right: 25%;
+
+        &::before {
+            content: "\F134";
+        }
+
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: -35px;
+        text-align: center;
+        width: 100%;
+
+        li {
+            display: inline-block;
+            cursor: pointer;
+            color: gray;
+            margin: 0 5px;
+
+            &::before {
+                font-family: FontAwesome;
+                font-size: 12px;
+                content: "\f111";
+            }
+
+            &.slick-active {
+                &::before {
+                    color: black;
+                    font-size: 14px
+                }
+
+            }
+        }
+    }
+
+    .student-review {
+        @include flex-align;
+        flex-direction: column;
+        margin: 30px 0;
+
+        .student-review-image {
+            border-radius: 5px 5px 0 0;
+            background-color: RGBA(162, 130, 239, 0.6);
+            width: 250PX;
+            height: 130px;
+            position: relative;
+
+            img {
+                width: 110px ;
+                height: 110px;
+                position: absolute;
+                @include position-align;
+                top: 73%;
+            }
+
+            .student-review-content-title {
+                box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+
+                border-radius: 5px 5px;
+                text-align: center;
+                background-color: white;
+                width: 80%;
+                position: absolute;
+                @include position-align;
+                top: -1%;
+                padding: 5px;
+
+                span {
+                    font-size: 18px;
+                    font-family: $ff-montserrat;
+                    color: black;
+                }
+
+                color: rgba(0, 0, 0, 0.6);
+                margin-bottom: 20px;
+            }
+        }
+
+        .student-review-content {
+            width: 240px;
+            background-color: white;
+            padding: 20px 5px;
+            // border: 1px solid gray;
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+            .student-review-content-description {
+                padding: 15px;
+                height: fit-content;
+                font-size: 16px;
+                line-height: 18px;
+                letter-spacing: 0.08em;
+                text-indent: 30px;
+                color: rgba(0, 0, 0, 0.6);
+
+
+            }
+
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:430px) {
+    .student-review-wrapper {
+        width: 380px !important;
+    }
+
+    .student-review-image {
+        width: 270px !important;
+     }
+ 
+     .student-review-content {
+         width: 260px !important;
+ 
+     }
+}
+
+
+
+@media screen and (min-width:450px) {
+    .student-review-wrapper {
+        width: 400px !important;
+    }
+
+    .student-review-image {
+       width: 300px !important;
+    }
+
+    .student-review-content {
+        width: 290px !important;
+
+    }
+}
+
+@media screen and (min-width:500px) {
+    .student-review-wrapper {
+        width: 430px !important;
+    }
+
+
+}
+@media screen and (min-width:550px) {
+    .student-review-wrapper {
+        width: 530px !important;
+    }
+   
+
+}
+
+@media screen and (min-width:576px) {
+    .student-review-wrapper {
+        display: none;
+    }
+
+
+}

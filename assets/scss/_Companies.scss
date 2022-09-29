@@ -28,17 +28,7 @@
             display: none !important;
         }
    }
-   div:nth-child(3){
-    @include flex-align;
-    max-width: 1200PX;
-    justify-content: end;
-    margin:auto;
-    button{
-        @include button-style;
-        font-size: 16px;
-       }
-
-   }
+ 
 
 }
 
