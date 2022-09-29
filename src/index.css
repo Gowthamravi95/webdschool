@@ -619,31 +619,36 @@ a {
   }
 }
 .about-wrapper .about-container {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-.about-wrapper .about-container .about {
-  color: rgba(26, 26, 26, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 150px;
+}
+.about-wrapper .about-container .about {
+  color: rgba(26, 26, 26, 0.8);
+  width: 90vw;
 }
 .about-wrapper .about-container .about .about-head {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 10px;
+  text-align: center;
 }
 .about-wrapper .about-container .about .about-head span {
   font-size: 42px;
 }
 .about-wrapper .about-container .about .about-head label {
   color: #1E90FF;
+  font-size: 52px;
 }
 .about-wrapper .about-container .about h2 {
   font-size: 28px;
+  padding: 20px;
 }
-.about-wrapper .about-container .about p {
+.about-wrapper .about-container .about .more p {
   font-size: 0.9375rem;
   line-height: 1.7;
   letter-spacing: 1px;
@@ -651,14 +656,100 @@ a {
   font-family: "Roboto", sans-serif;
   text-align: left;
   text-indent: 20px;
-  width: 92%;
+  margin-bottom: 10px;
 }
+.about-wrapper .about-container .about .counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+}
+.about-wrapper .about-container .about .counter .count {
+  text-align: center;
+}
+.about-wrapper .about-container .about .counter .count h2 {
+  all: unset;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #1E90FF;
+}
+.about-wrapper .about-container .about .counter .count p {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  color: #505050;
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+}
+.about-wrapper .about-container .infra {
+  width: 90vw;
+}
+.about-wrapper .about-container .infra h2 {
+  font-size: 28px;
+  padding: 20px;
+  color: rgba(26, 26, 26, 0.8);
+}
+.about-wrapper .about-container .infra .grid-container img {
+  max-width: 40%;
+}
+.about-wrapper .about-container .infra .cta-viewall {
+  width: 80%;
+  padding: 20px;
+}
+
 @media screen and (min-width: 992px) {
   .about-wrapper .about-container {
-    grid-template-columns: 1fr 1fr;
-    height: 500px;
+    flex-direction: row;
+  }
+  .about-wrapper .about-container .about .about-head {
+    text-align: start;
   }
 }
+/* css genral pros  */
+a.morelink i {
+  color: #1E90FF;
+  position: relative;
+  top: 1px;
+  left: 5px;
+}
+
+a.morelink {
+  text-decoration: none;
+  outline: none;
+  color: #1E90FF;
+  cursor: pointer;
+  line-height: 1.7;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+/* css prorperties for height wise function  */
+.more {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 120px;
+  position: relative;
+}
+
+.more:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to top, #fff, transparent);
+}
+
+.moreStyle {
+  overflow: none;
+  max-height: 1000px;
+}
+
+.more.nobefore::before {
+  display: none;
+}
+
 .testimonal-wrapper {
   display: flex;
   justify-content: center;
@@ -947,11 +1038,11 @@ a {
 .student-review-wrapper .student-review .student-review-content {
   width: 285px;
   background-color: white;
-  padding: 20px 5px;
+  padding: 40px 5px 10px 5px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 .student-review-wrapper .student-review .student-review-content .student-review-content-description {
-  padding: 15px;
+  padding: 5px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1099,7 +1190,7 @@ a {
 .student-review-wrapper-vertical .student-review .student-review-content {
   width: 370px !important;
   background-color: white;
-  padding: 20px 5px;
+  padding: 40px 5px 10px 5px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1107,7 +1198,7 @@ a {
   padding-left: 50px;
 }
 .student-review-wrapper-vertical .student-review .student-review-content .student-review-content-description {
-  padding: 15px;
+  padding: 5px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
