@@ -181,6 +181,17 @@ $(document).ready(() => {
 
                 }
             },
+            {
+            
+             
+                
+                breakpoint: 450,
+                settings: {
+                    centerPadding: '40px',
+
+
+                }
+            },
         ]
 
     })
