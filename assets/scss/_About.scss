@@ -2,12 +2,55 @@
 
 .about-wrapper{
     .about-container{
+        display: grid;
+        grid-template-columns: 1fr;
+      
         .about{
-            height: 500px;
+            color: rgba(26,26,26,0.8);
+            @include flex-align;
+            .about-head{
+                font-family: $ff-roboto;
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                span{
+                    font-size: 42px;
+                }
+                label{
+                    color: $lightBlue-clr;
+                }
+            }
+            h2{
+                font-size: 28px;
+            }
+            p{
+                @include base-style;
+                text-align: left;
+                text-indent: 20px;
+                width: 92%;
+            }
         }
+       
         .infra{
 
         }
     }
     
+}
+
+@media screen and (min-width:992px) {
+    .about-wrapper{
+        .about-container{
+            grid-template-columns: 1fr 1fr;
+            height: 500px;
+    
+            .about{
+            }
+            .infra{
+          
+    
+            }
+        }
+        
+    }
 }
