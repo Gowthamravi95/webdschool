@@ -1,0 +1,269 @@
+.placement-wrapper {
+    background-color: #1a1a1a;
+
+    .placement {
+        @include flex-align;
+        flex-direction: column;
+
+        .left {
+            width: 100vw;
+            height: 300px;
+            // background-color: red;
+            @include flex-align;
+            padding: 0 20px;
+            .content {
+                font-family: $ff-roboto;
+                font-size: 30px;
+                font-weight: 500;
+                color: rgba(256, 256, 256, 0.7);
+                line-height: 40px;
+                letter-spacing: 2px;
+                text-align: center;
+                span {
+                    font-size: 36px;
+                    color: $lightBlue-clr;
+                }
+            }
+        }
+
+        .right {
+            height: 450px;
+            // background-color: blue;
+            width: 100vw;
+            @include flex-align;
+            flex-direction: column;
+            .placement-cards-wrapper {
+          
+                .placement-card {
+                    width: 300px;
+                    height: 280px;
+                    @include flex-align;
+                    padding: 0 20px;
+                    .left {
+                        @include flex-align;
+                        flex-direction: column;
+                        width: 45%;
+                        height: 100%;
+                        border-radius: 5px 0 0 5px;
+                        position: relative;
+                        div{
+                            position: absolute;
+                            font-family: $ff-roboto;
+                            letter-spacing: 0.08em;
+                            font-size: 14px;
+                            text-align: center;
+
+                        }
+                        div:nth-child(1){
+                            top:0;
+                            font-size: 12px;
+                            background-color: white;
+                            padding: 5px 10px;
+                            border-radius: 0 0 5px 5px;
+                        }
+                            div:nth-child(2){
+                                img{
+                                    height: 85px;
+                                    width: 85x;
+                            }
+                            top: 40px;
+                        }
+                        div:nth-child(3){
+                            img{
+                                height: 30px;
+                            }
+                            top: 160px;
+                        }
+                        div:nth-child(4){
+                            top: 210px;
+                        }
+                        div:nth-child(5){
+                            top: 230px
+                        }
+                        div:nth-child(5),div:nth-child(4){
+                            font-weight: 500;
+                            color: white;
+                        }
+                    }
+
+                    .right {
+                        @include flex-align;
+                        flex-direction: column;
+                        border-radius: 0 5px 5px 0;
+                        width: 55%;
+                        height: 100%;
+                        background-color: white;
+                        position: relative;
+                        div{
+                            position: absolute;
+                            font-family: $ff-roboto;
+                            letter-spacing: 0.08em;
+                            font-size: 14px;
+                            text-align: center;
+
+                        }
+                        div:nth-child(1){
+                                img{
+                                     height: 25px;
+
+                                }
+                        top:10px ;
+                        right: 10px;
+                        }
+                        div:nth-child(2){
+                            top: 65px;
+                        }
+                        div:nth-child(3){
+                            top: 90px;
+                        }
+                        div:nth-child(4){
+                            top: 170px;
+                        }
+                        div:nth-child(5){
+                            top:200px;
+                        }
+                        div:nth-child(6){
+                            top: 230px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.placement-cards-wrapper{
+    @include flex-align;
+    width: 100%;
+    .slick-list {
+        padding-left: 0px !important;
+    }
+
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        bottom: -60px;
+        cursor: pointer;
+
+        &::before {
+            font-family: "bootstrap-icons";
+            font-size: 24px;
+            color: white;
+        }
+
+        z-index: 2;
+    }
+
+    .slick-prev {
+        left: 25%;
+
+        &::before {
+            content: "\F12A";
+            
+        }
+    }
+
+    .slick-next {
+        right: 25%;
+
+        &::before {
+            content: "\F134";
+        }
+
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: -55px;
+        text-align: center;
+        width: 100%;
+
+        li {
+            display: inline-block;
+            cursor: pointer;
+            color: rgba(256,256,256,0.7);
+            margin: 0 5px;
+
+            &::before {
+                font-family: FontAwesome;
+                font-size: 10px;
+                content: "\f111";
+            }
+
+            &.slick-active {
+                &::before {
+                    color: white;
+                    font-size: 12px
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1200px) {
+    .placement-wrapper {
+        padding: 40px 0;
+        .placement {
+            flex-direction: row;
+
+            .left {
+                width: 35vw;
+
+
+                .content {
+                text-align: left;
+
+                }
+            }
+
+            .right {
+
+                width: 55vw;
+
+                .placement-cards-wrapper {
+                    .placement-card {}
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+

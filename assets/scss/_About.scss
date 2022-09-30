@@ -1,6 +1,7 @@
 
 
 .about-wrapper{
+    margin-top: 50px;
     .about-container{
         @include flex-align;
         flex-direction: column;
@@ -81,7 +82,7 @@
     
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:1200px) {
     .about-wrapper{
         .about-container{
             flex-direction: row;

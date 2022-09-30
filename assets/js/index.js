@@ -196,6 +196,28 @@ $(document).ready(() => {
 
     })
 
+    $('.placement-cards-wrapper').slick({
+        autoplay: true,
+        autoplaySpeed: 1500,
+        speed: 1200,
+        cssEase: 'linear',
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        variableWidth: true,
+        adaptiveHeight: true,
+        infinte: true,
+        dots: true,
+        customPaging: function (slider, i) {
+            return $('<button type="button" />').text("");
+        },
+        prevArrow: `<button class="slick-prev" aria-label="Previous" type="button"></button>`,
+        nextArrow: `<button class="slick-next" aria-label="Next" type="button"></button>`,
+    })
+
+
+
+    
+
 
 })
 

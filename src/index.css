@@ -618,6 +618,216 @@ a {
     font-size: 36px !important;
   }
 }
+.placement-wrapper {
+  background-color: #1a1a1a;
+}
+.placement-wrapper .placement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.placement-wrapper .placement .left {
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.placement-wrapper .placement .left .content {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.placement-wrapper .placement .left .content span {
+  font-size: 36px;
+  color: #1E90FF;
+}
+.placement-wrapper .placement .right {
+  height: 450px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card {
+  width: 300px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 45%;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+  position: relative;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .left div {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.08em;
+  font-size: 14px;
+  text-align: center;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .left div:nth-child(1) {
+  top: 0;
+  font-size: 12px;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 0 0 5px 5px;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .left div:nth-child(2) {
+  top: 40px;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .left div:nth-child(2) img {
+  height: 85px;
+  width: 85x;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .left div:nth-child(3) {
+  top: 160px;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .left div:nth-child(3) img {
+  height: 30px;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .left div:nth-child(4) {
+  top: 210px;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .left div:nth-child(5) {
+  top: 230px;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .left div:nth-child(5), .placement-wrapper .placement .right .placement-cards-wrapper .placement-card .left div:nth-child(4) {
+  font-weight: 500;
+  color: white;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0 5px 5px 0;
+  width: 55%;
+  height: 100%;
+  background-color: white;
+  position: relative;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .right div {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.08em;
+  font-size: 14px;
+  text-align: center;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .right div:nth-child(1) {
+  top: 10px;
+  right: 10px;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .right div:nth-child(1) img {
+  height: 25px;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .right div:nth-child(2) {
+  top: 65px;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .right div:nth-child(3) {
+  top: 90px;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .right div:nth-child(4) {
+  top: 170px;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .right div:nth-child(5) {
+  top: 200px;
+}
+.placement-wrapper .placement .right .placement-cards-wrapper .placement-card .right div:nth-child(6) {
+  top: 230px;
+}
+
+.placement-cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.placement-cards-wrapper .slick-list {
+  padding-left: 0px !important;
+}
+.placement-cards-wrapper .slick-prev,
+.placement-cards-wrapper .slick-next {
+  position: absolute;
+  bottom: -60px;
+  cursor: pointer;
+  z-index: 2;
+}
+.placement-cards-wrapper .slick-prev::before,
+.placement-cards-wrapper .slick-next::before {
+  font-family: "bootstrap-icons";
+  font-size: 24px;
+  color: white;
+}
+.placement-cards-wrapper .slick-prev {
+  left: 25%;
+}
+.placement-cards-wrapper .slick-prev::before {
+  content: "\f12a";
+}
+.placement-cards-wrapper .slick-next {
+  right: 25%;
+}
+.placement-cards-wrapper .slick-next::before {
+  content: "\f134";
+}
+.placement-cards-wrapper .slick-dots {
+  position: absolute;
+  bottom: -55px;
+  text-align: center;
+  width: 100%;
+}
+.placement-cards-wrapper .slick-dots li {
+  display: inline-block;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 5px;
+}
+.placement-cards-wrapper .slick-dots li::before {
+  font-family: FontAwesome;
+  font-size: 10px;
+  content: "\f111";
+}
+.placement-cards-wrapper .slick-dots li.slick-active::before {
+  color: white;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .placement-wrapper {
+    padding: 40px 0;
+  }
+  .placement-wrapper .placement {
+    flex-direction: row;
+  }
+  .placement-wrapper .placement .left {
+    width: 35vw;
+  }
+  .placement-wrapper .placement .left .content {
+    text-align: left;
+  }
+  .placement-wrapper .placement .right {
+    width: 55vw;
+  }
+}
+.about-wrapper {
+  margin-top: 50px;
+}
 .about-wrapper .about-container {
   display: flex;
   justify-content: center;
@@ -698,7 +908,7 @@ a {
   padding: 20px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .about-wrapper .about-container {
     flex-direction: row;
   }
@@ -787,7 +997,7 @@ a.morelink {
   padding: 20px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .testimonal-wrapper .testimonal {
     gap: 30px;
     flex-direction: row;
