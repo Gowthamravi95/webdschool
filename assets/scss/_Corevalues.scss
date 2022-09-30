@@ -2,9 +2,10 @@
     .core-values{
         background : url(../assets/public/images/education-horizontal-typography-banner-set-with-learning-knowledge-symbols-flat-illustration_1284-29493.webp)  no-repeat fixed center ;
         width: 100vw;
-        height: 600px;
+        height: fit-content;
         background-size: cover;
         position: relative;
+        padding: 100px 0;
         &:before{
             content: "";
             top: 0;
@@ -16,10 +17,11 @@
         @include flex-align;
        
         .content-wrap{
-            width: 600px;
-            height: 450px;
+            width: 92%;
+            height: fit-content;
             background-color: white;
             position: relative;
+            top:30px;
             border-radius: 0 5px 5px 5px;
             @include base-style;
             &:before{
@@ -41,43 +43,72 @@
         .content{
             width: 100%;
             height: 100%;
-            overflow: auto;
             h2{
                 color: $lightBlue-clr;
-                font-size: 28px;
+                font-size: 40px;
                 padding: 10px;
-                text-align: center
-                
+                text-align: center;
+                font-family: $ff-montserrat;
             }
             .tab{
-                @include flex-align;
-                flex-direction: column;
-                gap: 10px;
-                span{
-                    background-color:  rgba(220, 53, 69, 0.1);
+                padding: 10px;
+                width: 100%;
+               div:nth-child(1){
+                display: flex;
+                cursor: pointer;
+                margin-bottom: 5px;
+                width: 100%;
+                height: 40px;
+
+                div:nth-child(1){
+                    @include flex-align;
+                    font-size: 28px;
+                    border-radius: 5px;
+                    width: 42px;
+                    
+                }
+                div:nth-child(2){
+                    @include flex-align;
+                    justify-content: start;
+                    border-radius: 5px;
+                    padding-left: 10px;
                     font-size: 17px;
                     font-weight: 500 !important;
+                    margin-left: 10px;
                     color: rgba(0,0,0,0.8);
-                    margin-right: 10px;
-                    padding: 14px;
-                
+                    width: 100%;
+                    height: 100%;
+                   
                 }
-                i{
-                    font-size: 32px;
+               
+                
+               }
+               .content-text{
+                border-radius: 5px;
+                text-indent: 30px;
+                color: rgba(0, 0, 0, 0.7);
+                width: 100%;
+                display:none;
+                background-color: rgba(0, 0, 0, 0.1);
+                padding: 15px;
+              }
+                
+            }
+            .tab div:nth-child(1).active{
+
+                div:nth-child(2){
+                    color: $pink-clr;
+                  background-color:  rgba(220, 53, 69, 0.2);
+
+                }
+                div:nth-child(1){
                     color: white;
                     background-color: $pink-clr;
-                    padding: 5px;
-                    border-radius: 5PX;
-                  
+
                 }
             }
 
-            .content-text{
-                text-indent: 30px;
-                color: rgba(0, 0, 0, 0.7);
-                margin: 0 20px;
-                width: 75%
-              }
+            
             
         }
 
@@ -85,6 +116,11 @@
         }
 }
 
+@media screen and (min-width:600px){
+    .content-wrap{
+        width: 600px !important;
+    }
+}
 
 
 

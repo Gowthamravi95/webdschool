@@ -367,3 +367,18 @@ $(document).ready(() => {
 
 
 
+$(document).ready(function() {
+    $(".tab > div").on("click", function() {
+      if ($(this).hasClass("active")) {
+        $(this).removeClass("active");
+        $(this).siblings(".content-text").slideUp(200);
+       
+      } else {
+      
+        $(".tab > div").removeClass("active");
+        $(this).addClass("active");
+        $(".content-text").slideUp(200);
+        $(this).siblings(".content-text").slideDown(200);
+      }
+    });
+  });
