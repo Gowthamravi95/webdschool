@@ -70,11 +70,11 @@
         @include flex-align;
         flex-direction: column;
         margin: 30px 0;
-
+        width: 290px !important;
         .student-review-image {
             border-radius: 5px 5px 0 0;
             background-color: RGBA(162, 130, 239, 0.6);
-            width: 290PX;
+            width: 290px ;
             height: 130px;
             position: relative;
 
@@ -110,7 +110,7 @@
         }
 
         .student-review-content {
-            width: 285px;
+            width: 285px !important;
             background-color: white;
             padding: 40px 5px 10px 5px;
             // border: 1px solid gray;
