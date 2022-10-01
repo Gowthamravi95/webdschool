@@ -107,7 +107,9 @@
         }
 
         .student-review-content {
-            width: 370px !important;
+            width: 450px !important;
+            @include flex-align;
+            height: 220px !important;
             background-color: white;
             padding: 40px 5px 10px 5px;
 
@@ -117,14 +119,14 @@
             padding-left: 50px;
             .student-review-content-description {
                 padding: 5px;
-                height: fit-content;
                 font-size: 15px;
                 font-family: $ff-roboto;
-                line-height: 18px;
-                letter-spacing: 0.08em;
+                line-height: 1.4;
+                letter-spacing: 1px;
+                word-spacing: 1px;
+
                 text-indent: 30px;
                 color: rgba(0, 0, 0, 0.6);
-
 
             }
 

@@ -618,6 +618,181 @@ a {
     font-size: 36px !important;
   }
 }
+.courses-wrapper .courses {
+  width: 100vw;
+  height: fit-content;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+.courses-wrapper .courses ul#tabs-nav {
+  padding: 40px 20px;
+}
+.courses-wrapper .courses ul#tabs-nav li {
+  margin-right: 10px;
+  font-size: 22px;
+  padding: 8px 5px;
+  border-radius: 5px;
+  display: inline;
+  cursor: pointer;
+}
+.courses-wrapper .courses ul#tabs-nav li:hover, .courses-wrapper .courses ul#tabs-nav li.active {
+  background-color: #FF2359;
+}
+.courses-wrapper .courses ul#tabs-nav li:hover a, .courses-wrapper .courses ul#tabs-nav li.active a {
+  color: #FFF;
+}
+
+@media screen and (min-width: 500px) {
+  .courses-wrapper .courses ul#tabs-nav li {
+    margin-right: 50px;
+    padding: 8px 15px;
+  }
+}
+.courses-card-wrapper {
+  width: 80vw !important;
+}
+.courses-card-wrapper .courses-card {
+  height: 390px;
+  width: 300px;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.courses-card-wrapper .courses-card .video {
+  height: 200px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+.courses-card-wrapper .courses-card .video img {
+  height: 200px;
+  width: 100%;
+  opacity: 0.8;
+}
+.courses-card-wrapper .courses-card .details {
+  height: 190px;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+.courses-card-wrapper .courses-card .details .cta-viewall {
+  justify-content: center;
+  padding-top: 10px;
+}
+.courses-card-wrapper .courses-card .details div:nth-child(1) {
+  color: #505050;
+}
+.courses-card-wrapper .courses-card .details div:nth-child(1) div {
+  display: flex;
+  padding: 5px;
+  font-size: 16px;
+}
+.courses-card-wrapper .courses-card .details div:nth-child(1) div i {
+  margin-right: 7px;
+}
+.courses-card-wrapper .courses-card .details div:nth-child(1) div .bi-dash-lg {
+  transform: rotate(90deg) scale(1.3) translateX(-3px);
+  font-size: 22px;
+  margin-right: 0 !important;
+}
+.courses-card-wrapper .courses-card .course-title {
+  position: absolute;
+  background-color: white;
+  height: 40px;
+  width: 270px;
+  font-size: 18px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.08em;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 180px;
+  border-radius: 5px;
+}
+.courses-card-wrapper .courses-card .rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  background-color: #388E3C;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  width: 120px;
+  height: 25px;
+}
+.courses-card-wrapper .courses-card .rating i {
+  padding: 0 8px;
+}
+
+.courses-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+}
+.courses-card-wrapper .slick-list {
+  padding-left: 0px !important;
+}
+.courses-card-wrapper .slick-slide {
+  margin-right: 50px;
+}
+.courses-card-wrapper .slick-prev,
+.courses-card-wrapper .slick-next {
+  position: absolute;
+  bottom: -55px;
+  cursor: pointer;
+  z-index: 2;
+}
+.courses-card-wrapper .slick-prev::before,
+.courses-card-wrapper .slick-next::before {
+  font-family: "bootstrap-icons";
+  font-size: 24px;
+  color: black;
+}
+.courses-card-wrapper .slick-prev {
+  left: 25%;
+}
+.courses-card-wrapper .slick-prev::before {
+  content: "\f12a";
+}
+.courses-card-wrapper .slick-next {
+  right: 25%;
+}
+.courses-card-wrapper .slick-next::before {
+  content: "\f134";
+}
+.courses-card-wrapper .slick-dots {
+  position: absolute;
+  bottom: -50px;
+  text-align: center;
+  width: 100%;
+}
+.courses-card-wrapper .slick-dots li {
+  display: inline-block;
+  cursor: pointer;
+  color: #505050;
+  margin: 0 5px;
+}
+.courses-card-wrapper .slick-dots li::before {
+  font-family: FontAwesome;
+  font-size: 10px;
+  content: "\f111";
+}
+.courses-card-wrapper .slick-dots li.slick-active::before {
+  color: black;
+  font-size: 12px;
+}
+
 .about-wrapper {
   margin-top: 50px;
 }
@@ -756,8 +931,6 @@ a.morelink {
 .core-values-wrapper .core-values {
   background: url(../assets/public/images/education-horizontal-typography-banner-set-with-learning-knowledge-symbols-flat-illustration_1284-29493.webp) no-repeat fixed center;
   width: 100vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   background-size: cover;
   position: relative;
@@ -776,8 +949,6 @@ a.morelink {
 }
 .core-values-wrapper .core-values .content-wrap {
   width: 92%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   background-color: white;
   position: relative;
@@ -1507,13 +1678,12 @@ a.morelink {
 }
 .student-review-wrapper .student-review .student-review-content .student-review-content-description {
   padding: 5px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
-  line-height: 18px;
-  letter-spacing: 0.08em;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  word-spacing: 1px;
   text-indent: 30px;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -1652,24 +1822,24 @@ a.morelink {
   color: black;
 }
 .student-review-wrapper-vertical .student-review .student-review-content {
-  width: 370px !important;
+  width: 450px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px !important;
   background-color: white;
   padding: 40px 5px 10px 5px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   padding-left: 50px;
 }
 .student-review-wrapper-vertical .student-review .student-review-content .student-review-content-description {
   padding: 5px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
-  line-height: 18px;
-  letter-spacing: 0.08em;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  word-spacing: 1px;
   text-indent: 30px;
   color: rgba(0, 0, 0, 0.6);
 }

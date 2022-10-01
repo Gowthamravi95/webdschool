@@ -214,7 +214,19 @@ $(document).ready(() => {
         nextArrow: `<button class="slick-next" aria-label="Next" type="button"></button>`,
     })
 
-
+    $('.courses-card-wrapper').slick({
+        variableWidth: true,
+        adaptiveHeight: true,
+        dots: true,
+        infinte: false,
+        cssEase: 'linear',
+   
+        customPaging: function (slider, i) {
+            return $('<button type="button" />').text("");
+        },
+        prevArrow: `<button class="slick-prev" aria-label="Previous" type="button"></button>`,
+        nextArrow: `<button class="slick-next" aria-label="Next" type="button"></button>`,
+    })
 
     
 
@@ -235,7 +247,6 @@ $('.student-review-wrapper-vertical').slick({
     speed: 1200,
     dots: true,
     vertical:true,
-    verticalSwiping: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     customPaging: function (slider, i) {
@@ -325,7 +336,7 @@ $(document).ready(() => {
 
     $('.more').each(function () {
 
-            console.log($(this).height());
+            // console.log($(this).height());
 
             let h =$(this).height();
 
@@ -368,17 +379,44 @@ $(document).ready(() => {
 
 
 $(document).ready(function() {
-    $(".tab > div").on("click", function() {
+    $(".tab > .head").on("click", function() {
       if ($(this).hasClass("active")) {
         $(this).removeClass("active");
         $(this).siblings(".content-text").slideUp(200);
        
       } else {
       
-        $(".tab > div").removeClass("active");
+        $(".tab > .head").removeClass("active");
         $(this).addClass("active");
         $(".content-text").slideUp(200);
         $(this).siblings(".content-text").slideDown(200);
       }
     });
+
+
+    $('#tabs-nav li:first-child').addClass('active');
+    $('.tab-content').hide();
+    $('.tab-content:first').show();
+    
+    // Click function
+    $('#tabs-nav li').click(function(){
+      $('#tabs-nav li').removeClass('active');
+      $(this).addClass('active');
+      $('.tab-content').hide();
+      
+      var activeTab = $(this).find('a').attr('href');
+      $(activeTab).fadeIn();
+      return false;
+    });
+
+
+
+
+
+
+
+
+
+
+    
   });
