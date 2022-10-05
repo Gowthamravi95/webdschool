@@ -1,7 +1,6 @@
 .student-review-wrapper {
     @include flex-align;
-    width: 360px !important;
-
+    width: 95vw;
     .slick-list {
         padding-left: 0px !important;
     }
@@ -69,11 +68,11 @@
     .student-review {
         @include flex-align;
         flex-direction: column;
-        margin: 30px 0;
+        margin-right: 30px;
         width: 290px !important;
         .student-review-image {
             border-radius: 5px 5px 0 0;
-            background-color: RGBA(162, 130, 239, 0.6);
+            background-color: rgba(162, 130, 239, 0.6);
             width: 290px ;
             height: 130px;
             position: relative;

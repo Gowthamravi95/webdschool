@@ -148,51 +148,19 @@ $(document).ready(() => {
 
 
     $('.student-review-wrapper').slick({
-        autoplay: true,
-        autoplaySpeed: 1500,
+        // autoplay: true,
+        // autoplaySpeed: 1500,
         cssEase: 'linear',
-        centerPadding: "140px",
-        centerMode: true,
         speed: 1200,
         dots: true,
+        variableWidth: true,
+        adaptiveHeight: true,
         customPaging: function (slider, i) {
             return $('<button type="button" />').text("");
         },
         prevArrow: `<button class="slick-prev" aria-label="Previous" type="button"></button>`,
         nextArrow: `<button class="slick-next" aria-label="Next" type="button"></button>`,
-        responsive: [
-            {
-                breakpoint: 550,
-                settings: {
-                    centerPadding: '80px',
-                    
-                },
-            },
-
-            {
-            
-             
-                
-                breakpoint: 500,
-                settings: {
-                    centerPadding: '60px',
-
-
-                }
-            },
-            {
-            
-             
-                
-                breakpoint: 450,
-                settings: {
-                    centerPadding: '40px',
-
-
-                }
-            },
-        ]
-
+        
     })
 
     $('.placement-cards-wrapper').slick({
