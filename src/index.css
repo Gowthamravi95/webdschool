@@ -635,6 +635,10 @@ a {
 }
 .courses-wrapper .courses ul#tabs-nav {
   padding: 40px 10px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .courses-wrapper .courses ul#tabs-nav li {
   margin-right: 10px;
