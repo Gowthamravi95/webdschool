@@ -1,6 +1,7 @@
 .student-review-wrapper {
     @include flex-align;
-    width: 95vw;
+    width: 360px !important;
+
     .slick-list {
         padding-left: 0px !important;
     }
@@ -68,12 +69,12 @@
     .student-review {
         @include flex-align;
         flex-direction: column;
-        margin-right: 30px;
-        width: 290px !important;
+        margin: 30px 0;
+
         .student-review-image {
             border-radius: 5px 5px 0 0;
-            background-color: rgba(162, 130, 239, 0.6);
-            width: 290px ;
+            background-color: RGBA(162, 130, 239, 0.6);
+            width: 290PX;
             height: 130px;
             position: relative;
 
@@ -109,7 +110,7 @@
         }
 
         .student-review-content {
-            width: 285px !important;
+            width: 285px;
             background-color: white;
             padding: 40px 5px 10px 5px;
             // border: 1px solid gray;
@@ -120,9 +121,8 @@
                 height: fit-content;
                 font-size: 15px;
                 font-family: $ff-roboto;
-                line-height: 1.4;
-                letter-spacing: 1px;
-                word-spacing: 1px;
+                line-height: 18px;
+                letter-spacing: 0.08em;
                 text-indent: 30px;
                 color: rgba(0, 0, 0, 0.6);
 

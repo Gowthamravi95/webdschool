@@ -966,6 +966,7 @@ a.morelink {
   background-color: white;
   position: relative;
   top: 30px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
   border-radius: 0 5px 5px 5px;
   font-size: 0.9375rem;
   line-height: 1.7;
@@ -1120,9 +1121,9 @@ a.morelink {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 340px;
+  width: 320px;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
   gap: 20px;
   border-radius: 5px;
   transform: scale(1.1);
@@ -1195,6 +1196,12 @@ a.morelink {
   }
   .hero2-wrapper .hero2 .right {
     width: 35vw;
+  }
+}
+@media screen and (min-width: 450px) {
+  .hero2-wrapper .hero2 .right .box {
+    width: 340px !important;
+    padding: 20px !important;
   }
 }
 .placement-wrapper {
@@ -1731,7 +1738,7 @@ a.morelink {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 95vw;
+  width: 360px !important;
 }
 .student-review-wrapper .slick-list {
   padding-left: 0px !important;
@@ -1786,13 +1793,12 @@ a.morelink {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-right: 30px;
-  width: 290px !important;
+  margin: 30px 0;
 }
 .student-review-wrapper .student-review .student-review-image {
   border-radius: 5px 5px 0 0;
-  background-color: rgba(162, 130, 239, 0.6);
-  width: 290px;
+  background-color: RGBA(162, 130, 239, 0.6);
+  width: 290PX;
   height: 130px;
   position: relative;
 }
@@ -1826,7 +1832,7 @@ a.morelink {
   color: black;
 }
 .student-review-wrapper .student-review .student-review-content {
-  width: 285px !important;
+  width: 285px;
   background-color: white;
   padding: 40px 5px 10px 5px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -1836,9 +1842,8 @@ a.morelink {
   height: fit-content;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
-  line-height: 1.4;
-  letter-spacing: 1px;
-  word-spacing: 1px;
+  line-height: 18px;
+  letter-spacing: 0.08em;
   text-indent: 30px;
   color: rgba(0, 0, 0, 0.6);
 }

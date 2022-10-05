@@ -1,6 +1,7 @@
 .hero2-wrapper {
     position: relative;
     z-index: 50;
+
     .hero2 {
         @include flex-align;
         flex-direction: column;
@@ -13,37 +14,41 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            padding: 20px ;
-            h1{
+            padding: 20px;
+
+            h1 {
                 padding: 20px;
-                color: rgba(0,0,0,0.8);
+                color: rgba(0, 0, 0, 0.8);
                 font-size: 20px;
                 font-family: $ff-montserrat;
                 text-align: center;
-                span{
+
+                span {
                     font-size: 40px;
                     color: $lightBlue-clr;
-    
+
                 }
             }
-            ul{
-                    li {
-                        padding-left: 1.3rem;
-                        margin-top: 15px;
-                        @include base-style;
-                        line-height: 1.5;   
-                        &:before {
-                            content: "\f00c";
-                            font-family: FontAwesome;
-                            display: inline-block;
-                            margin-left: -1.3em; 
-                            width: 1.3em; 
-                            color: $yellow-clr;
-                          }
-                      }
-                    
+
+            ul {
+                li {
+                    padding-left: 1.3rem;
+                    margin-top: 15px;
+                    @include base-style;
+                    line-height: 1.5;
+
+                    &:before {
+                        content: "\f00c";
+                        font-family: FontAwesome;
+                        display: inline-block;
+                        margin-left: -1.3em;
+                        width: 1.3em;
+                        color: $yellow-clr;
+                    }
+                }
+
             }
-          
+
         }
 
         .right {
@@ -53,45 +58,52 @@
             @include flex-align;
             justify-content: center;
             align-items: center;
-            .box{
+
+            .box {
                 background-color: rgba(220, 53, 69, 0.3);
                 @include flex-align;
-                width: 340px;
+                width: 320px;
                 flex-direction: column;
-                padding: 20px;
+                padding: 10px;
                 gap: 20px;
                 border-radius: 5px;
                 transform: scale(1.1);
-                h2{
+
+                h2 {
                     font-family: $ff-montserrat;
-                color: rgba(0,0,0,0.8);
+                    color: rgba(0, 0, 0, 0.8);
 
                 }
-                form{
+
+                form {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    align-items: center ;
+                    align-items: center;
                     gap: 15px;
                     width: 100%;
-                    input{
+
+                    input {
                         padding: 12px;
-                     border-radius: 5px;
+                        border-radius: 5px;
                         width: 95%;
-                        border:none
+                        border: none
                     }
-                    button{
-                        @include button-style ;
+
+                    button {
+                        @include button-style;
                         width: 95%;
                     }
-                   
+
                 }
-                label{
+
+                label {
                     @include base-style;
                     font-size: 14px;
                     line-height: 1.3;
                     width: 90%;
-                    a{
+
+                    a {
                         text-decoration: underline !important;
                     }
                 }
@@ -105,6 +117,7 @@
 @media screen and (min-width:1200px) {
     .hero2-wrapper {
         padding: 40px 0;
+
         .hero2 {
             flex-direction: row;
 
@@ -113,7 +126,7 @@
                 align-items: flex-start;
 
                 h1 {
-                text-align: left;
+                    text-align: left;
 
                 }
             }
@@ -122,10 +135,27 @@
 
                 width: 35vw;
 
-               
+
             }
         }
     }
 
 }
 
+@media screen and (min-width: 450px) {
+    .hero2-wrapper {
+        .hero2 {
+            .right {
+                .box {
+
+                    width: 340px !important;
+
+                    padding: 20px !important;
+                }
+            }
+
+
+
+        }
+    }
+}
