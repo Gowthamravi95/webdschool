@@ -7,7 +7,7 @@
                             //         off:"./assets/public/images/wdd1.png",
                             //         on:"./assets/public/images/wdd2.png"
                             //     },
-                            //     duaration: {
+                            //     duration: {
                             //         off:4,
                             //         on:6,
                             //     },
@@ -45,7 +45,7 @@ const offlineCoursesData=[
         id:1,
         course:"UX UI Design",
         image:"./assets/public/images/uxui1.jpg",
-        duaration: 5,
+        duration: 5,
         session:60,
         hours:90,
         sofwares:10,
@@ -59,7 +59,7 @@ const offlineCoursesData=[
         id:2,
         course:"Web Design & Development",
         image:"./assets/public/images/wdd1.png",
-        duaration: 6,
+        duration: 6,
         session:75,
         hours:120,
         sofwares:12,
@@ -73,7 +73,7 @@ const offlineCoursesData=[
         id:3,
         course:"Digital Marketing",
         image:"./assets/public/images/dm1.jpg",
-        duaration: 4,
+        duration: 4,
         session:50,
         hours:80,
         sofwares:8,
@@ -87,7 +87,7 @@ const offlineCoursesData=[
         id:4,
         course:"Graphic Designer",
         image:"./assets/public/images/gd.webp",
-        duaration: 4,
+        duration: 4,
         session:40,
         hours:50,
         sofwares:12,
@@ -119,7 +119,7 @@ const onlineCoursesData=[
         id:1,
         course:"UX UI Design",
         image:"./assets/public/images/uxui2.jpg",
-        duaration: 5,
+        duration: 5,
         session:60,
         hours:90,
         sofwares:10,
@@ -132,7 +132,7 @@ const onlineCoursesData=[
         id:2,
         course:"Web Design & Development",
         image:"./assets/public/images/wdd2.jpg",
-        duaration: 5,
+        duration: 5,
         session:60,
         hours:90,
         sofwares:10,
@@ -146,7 +146,7 @@ const onlineCoursesData=[
         id:3,
         course:"Digital Marketing",
         image:"./assets/public/images/dm2.jpg",
-        duaration: 5,
+        duration: 5,
         session:60,
         hours:90,
         sofwares:10,
@@ -160,7 +160,7 @@ const onlineCoursesData=[
         id:4,
         course:"Data Science",
         image:"./assets/public/images/ds2.png",
-        duaration: 5,
+        duration: 5,
         session:60,
         hours:90,
         sofwares:10,
@@ -174,7 +174,7 @@ const onlineCoursesData=[
         id:5,
         course:"Advances Graphic Designer",
         image:"./assets/public/images/gd1.jpg",
-        duaration:5,
+        duration:5,
         session:60,
         hours:90,
         sofwares:10,
@@ -188,7 +188,7 @@ const onlineCoursesData=[
         id:6,
         course:"Flim Editing",
         image:"./assets/public/images/uxui1.jpg",
-        duaration:5,
+        duration:5,
         session:60,
         hours:90,
         sofwares:10,
@@ -202,7 +202,7 @@ const onlineCoursesData=[
         id:7,
         course:"Designer Pro",
         image:"./assets/public/images/gd1.jpg",
-        duaration:5,
+        duration:5,
         session:60,
         hours:90,
         sofwares:10,
@@ -218,7 +218,7 @@ const popularCoursesData=[
         id:1,
         course:"Advances Graphic Designer",
         image:"./assets/public/images/gd1.jpg",
-        duaration:5,
+        duration:5,
         session:60,
         hours:90,
         sofwares:10,
@@ -231,7 +231,7 @@ const popularCoursesData=[
         id:2,
         course:"UX UI Design",
         image:"./assets/public/images/uxui1.jpg",
-        duaration: 5,
+        duration: 5,
         session:60,
         hours:90,
         sofwares:10,
@@ -244,7 +244,7 @@ const popularCoursesData=[
         id:3,
         course:"Flim Editing",
         image:"./assets/public/images/ds1.jpeg",
-        duaration:5,
+        duration:5,
         session:60,
         hours:90,
         sofwares:10,
@@ -257,7 +257,7 @@ const popularCoursesData=[
         id:4,
         course:"Digital Marketing",
         image:"./assets/public/images/dm2.jpg",
-        duaration: 5,
+        duration: 5,
         session:60,
         hours:90,
         sofwares:10,
@@ -271,7 +271,7 @@ const popularCoursesData=[
         id:5,
         course:"Web Design & Development",
         image:"./assets/public/images/wdd2.jpg",
-        duaration: 5,
+        duration: 5,
         session:60,
         hours:90,
         sofwares:10,
@@ -298,7 +298,7 @@ const popularCoursesData=[
                                             <div><i class="fa-solid fa-screwdriver-wrench"></i> 10 Softwares covered </div>
                                         </div>
                                     </div>
-                                    <div class="cta-viewall"  ><button>View all</button></div>
+                                    <div class="cta-viewall"  ><button>Learn more</button></div>
                                 </div> 
                                 <div class="rating">4.5 <i class="bi bi-star-fill"></i> (156)</div>
                                 <div class="course-title">UX UI Design</div>   
@@ -344,15 +344,15 @@ $.each(popularCoursesData,function(i,e){
                                 <div class="details">
                                     <div>
                                         <div>
-                                            <div><i class="fa-regular fa-calendar"></i>` + e.duaration  + ` Months <i class="bi bi-dash-lg"></i></div>
-                                            <div><i class="fa-solid fa-tv"></i>` + e.seesion + ` Sessions </div>
+                                            <div><i class="fa-regular fa-calendar"></i>` + e.duration  + ` Months <i class="bi bi-dash-lg"></i></div>
+                                            <div><i class="fa-solid fa-tv"></i>` + e.session + ` Sessions </div>
                                         </div>
                                         <div>
                                             <div><i class="fa-regular fa-clock"></i> ` + e.hours + ` Hours <i class="bi bi-dash-lg"></i></div>
                                             <div><i class="fa-solid fa-screwdriver-wrench"></i>` + e.sofwares + ` Softwares covered </div>
                                         </div>
                                     </div>
-                                    <div class="cta-viewall"  ><button>View all</button></div>
+                                    <div class="cta-viewall"  ><button>Learn more</button></div>
                                 </div> 
                                 <div class="rating"> ` + e.rating + ` <i class="bi bi-star-fill"></i> (` + e.ratingCount +  `)</div>
                                 <div class="course-title">` + e.course  +  `</div>   
@@ -371,15 +371,15 @@ $.each(popularCoursesData,function(i,e){
                                 <div class="details">
                                     <div>
                                         <div>
-                                            <div><i class="fa-regular fa-calendar"></i>` + e.duaration  + ` Months <i class="bi bi-dash-lg"></i></div>
-                                            <div><i class="fa-solid fa-tv"></i>` + e.seesion + ` Sessions </div>
+                                            <div><i class="fa-regular fa-calendar"></i>` + e.duration  + ` Months <i class="bi bi-dash-lg"></i></div>
+                                            <div><i class="fa-solid fa-tv"></i>` + e.session + ` Sessions </div>
                                         </div>
                                         <div>
                                             <div><i class="fa-regular fa-clock"></i> ` + e.hours + ` Hours <i class="bi bi-dash-lg"></i></div>
                                             <div><i class="fa-solid fa-screwdriver-wrench"></i>` + e.sofwares + ` Softwares covered </div>
                                         </div>
                                     </div>
-                                    <div class="cta-viewall"  ><button>View all</button></div>
+                                    <div class="cta-viewall"  ><button>Learn more</button></div>
                                 </div> 
                                 <div class="rating"> ` + e.rating + ` <i class="bi bi-star-fill"></i> (` + e.ratingCount +  `)</div>
                                 <div class="course-title">` + e.course  +  `</div>   
@@ -399,15 +399,15 @@ $.each(popularCoursesData,function(i,e){
                                 <div class="details">
                                     <div>
                                         <div>
-                                            <div><i class="fa-regular fa-calendar"></i>` + e.duaration  + ` Months <i class="bi bi-dash-lg"></i></div>
-                                            <div><i class="fa-solid fa-tv"></i>` + e.seesion + ` Sessions </div>
+                                            <div><i class="fa-regular fa-calendar"></i>` + e.duration  + ` Months <i class="bi bi-dash-lg"></i></div>
+                                            <div><i class="fa-solid fa-tv"></i>` + e.session + ` Sessions </div>
                                         </div>
                                         <div>
                                             <div><i class="fa-regular fa-clock"></i> ` + e.hours + ` Hours <i class="bi bi-dash-lg"></i></div>
                                             <div><i class="fa-solid fa-screwdriver-wrench"></i>` + e.sofwares + ` Softwares covered </div>
                                         </div>
                                     </div>
-                                    <div class="cta-viewall"  ><button>View all</button></div>
+                                    <div class="cta-viewall"  ><button>Learn more</button></div>
                                 </div> 
                                 <div class="rating"> ` + e.rating + ` <i class="bi bi-star-fill"></i> (` + e.ratingCount +  `)</div>
                                 <div class="course-title">` + e.course  +  `</div>   

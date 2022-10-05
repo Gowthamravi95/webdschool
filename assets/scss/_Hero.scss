@@ -2,12 +2,16 @@
     .banner-wrapper{
         position: relative;
         z-index: -50;
-        background-color: #1a1a1a;
-        height: 350px;
+        // background-color: #1a1a1a;
+        height: 400px;
         width: 100vw;
+        // background: url(../public/images/banner.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         img{
             width: 100vw;
-            min-height: 500px;
+            min-height: 400px;
         }
         &::after{
             content: "";
@@ -28,6 +32,7 @@
             font-family: $ff-montserrat;
             text-align: center;
             width: 100vw;
+            transition: all 0.4s linear;
             span{
                 font-size: 40px;
                 color: $lightBlue-clr;

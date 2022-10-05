@@ -1,6 +1,6 @@
 .core-values-wrapper{
     .core-values{
-        background : url(../assets/public/images/education-horizontal-typography-banner-set-with-learning-knowledge-symbols-flat-illustration_1284-29493.webp)  no-repeat fixed center ;
+        // background : url(../assets/public/images/education-horizontal-typography-banner-set-with-learning-knowledge-symbols-flat-illustration_1284-29493.webp)  no-repeat fixed center ;
         width: 100vw;
         height: fit-content;
         background-size: cover;
@@ -9,7 +9,7 @@
         &:before{
             content: "";
             top: 0;
-            background-color: rgba(26,26,26,0.6);
+            // background-color: rgba(26,26,26,0.6);
             width: 100%;
             height: 100%;
             position: absolute;

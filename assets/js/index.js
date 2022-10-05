@@ -36,11 +36,11 @@ $(document).ready(() => {
 
 
     $('.course').mouseenter(function () {
-        $(this).children('button').css({ "background-color": "white", "color": "#FF2359" })
+        $(this).children('button').css({ "background-color": "white", "color": "#FF2359" ,"border": "1px solid #000"})
         $(this).children('button').children().css({ "transform": "rotate(180deg)" })
     })
     $('.course ').mouseleave(function () {
-        $(this).children('button').css({ "background-color": "#FF2359", "color": "white" })
+        $(this).children('button').css({ "background-color": "#FF2359", "color": "white", "border": "none" })
         $(this).children('button').children().css({ "transform": "rotate(0deg)" })
     })
 
@@ -151,7 +151,6 @@ $(document).ready(() => {
         autoplay: true,
         autoplaySpeed: 1500,
         cssEase: 'linear',
-        infinte: true,
         centerPadding: "140px",
         centerMode: true,
         speed: 1200,
@@ -197,7 +196,7 @@ $(document).ready(() => {
     })
 
     $('.placement-cards-wrapper').slick({
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 1500,
         speed: 1200,
         cssEase: 'linear',
@@ -205,7 +204,6 @@ $(document).ready(() => {
         pauseOnHover: false,
         variableWidth: true,
         adaptiveHeight: true,
-        infinte: true,
         dots: true,
         customPaging: function (slider, i) {
             return $('<button type="button" />').text("");
@@ -216,11 +214,11 @@ $(document).ready(() => {
 
     $('.courses-card-wrapper').slick({
         variableWidth: true,
-        adaptiveHeight: true,
+        // adaptiveHeight: true,
         dots: true,
-        infinte: false,
+        // infinte: false,
         cssEase: 'linear',
-   
+        infinite: false,
         customPaging: function (slider, i) {
             return $('<button type="button" />').text("");
         },
@@ -238,10 +236,9 @@ $(document).ready(() => {
 
 
 $('.student-review-wrapper-vertical').slick({
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 1500,
     cssEase: 'linear',
-    infinte: true,
     centerPadding: "80px",
     centerMode: true,
     speed: 1200,
@@ -411,8 +408,8 @@ $(document).ready(function() {
 
 
 
-
-
+    
+   
 
 
 
