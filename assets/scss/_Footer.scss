@@ -60,12 +60,21 @@ padding: 30px;
                 margin-right: 10px;
             }
             div{
-                i,svg{
-                    font-size: 20px;
+                display: flex;
+                gap: 15px;
+                span{
+                    width: 40px !important;
+                    display: block;
+                    height: 40px;
                     border: 1px solid rgba(256,256,256,0.7);
                     border-radius: 50%;
-                     padding: 12px;
+                    position: relative;
                 }
+                i,svg{ 
+                    font-size: 20px;
+                  position: absolute;
+                  @include position-align;
+                    }
                 svg{
                     height: 20px;
                     fill: $yellow-clr;

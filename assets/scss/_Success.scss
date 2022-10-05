@@ -1,0 +1,54 @@
+.success-wrapper{
+    .success{
+        @include flex-align;
+        flex-direction: column;
+        margin: 50px 0;
+        h1{
+            color: $lightBlue-clr;
+            padding: 20px;
+            text-align: center
+        }
+        .cards{
+            @include flex-align;
+            flex-wrap: wrap;
+            margin: 30px 0;
+
+            gap: 20px;
+          
+            .success-card{
+                width: 340px;
+                padding: 10px;
+                gap: 10px;
+                position: relative;
+                  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+                height: 310px;
+                font-family: $ff-montserrat;
+                img{
+                    height: 70px;
+                    width: 70px;
+                }
+                h2{
+                    font-size: 18px !important;
+                    
+                }
+                p{
+                    @include base-style;
+                    font-size: 15px;
+                    line-height: 1.5;
+                }
+                button{
+                    @include button-style;
+                    width: 200px;
+                    margin-top: 10px;
+                    position: absolute;
+                    bottom: 15px;
+                }
+                div:first-child{
+                    @include flex-align;
+                    gap: 15px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

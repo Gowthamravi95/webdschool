@@ -122,7 +122,7 @@
             flex-direction: row;
 
             .left {
-                width: 35vw;
+                width: 45vw;
                 align-items: flex-start;
 
                 h1 {
@@ -133,7 +133,7 @@
 
             .right {
 
-                width: 35vw;
+                width: 40vw;
 
 
             }
@@ -158,4 +158,32 @@
 
         }
     }
+}
+
+@media screen and (min-width:1450px) {
+    .hero2-wrapper {
+        padding: 40px 0;
+
+        .hero2 {
+            flex-direction: row;
+
+            .left {
+                width: 35vw;
+                align-items: flex-start;
+
+                h1 {
+                    text-align: left;
+
+                }
+            }
+
+            .right {
+
+                width: 30vw;
+
+
+            }
+        }
+    }
+
 }

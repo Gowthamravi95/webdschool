@@ -1188,14 +1188,14 @@ a.morelink {
     flex-direction: row;
   }
   .hero2-wrapper .hero2 .left {
-    width: 35vw;
+    width: 45vw;
     align-items: flex-start;
   }
   .hero2-wrapper .hero2 .left h1 {
     text-align: left;
   }
   .hero2-wrapper .hero2 .right {
-    width: 35vw;
+    width: 40vw;
   }
 }
 @media screen and (min-width: 450px) {
@@ -1204,6 +1204,100 @@ a.morelink {
     padding: 20px !important;
   }
 }
+@media screen and (min-width: 1450px) {
+  .hero2-wrapper {
+    padding: 40px 0;
+  }
+  .hero2-wrapper .hero2 {
+    flex-direction: row;
+  }
+  .hero2-wrapper .hero2 .left {
+    width: 35vw;
+    align-items: flex-start;
+  }
+  .hero2-wrapper .hero2 .left h1 {
+    text-align: left;
+  }
+  .hero2-wrapper .hero2 .right {
+    width: 30vw;
+  }
+}
+.success-wrapper .success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 0;
+}
+.success-wrapper .success h1 {
+  color: #1E90FF;
+  padding: 20px;
+  text-align: center;
+}
+.success-wrapper .success .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  gap: 20px;
+}
+.success-wrapper .success .cards .success-card {
+  width: 340px;
+  padding: 10px;
+  gap: 10px;
+  position: relative;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+  height: 310px;
+  font-family: "Montserrat", sans-serif;
+}
+.success-wrapper .success .cards .success-card img {
+  height: 70px;
+  width: 70px;
+}
+.success-wrapper .success .cards .success-card h2 {
+  font-size: 18px !important;
+}
+.success-wrapper .success .cards .success-card p {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  color: #505050;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.success-wrapper .success .cards .success-card button {
+  background-color: #FF2359;
+  border-radius: 5px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  height: 40px;
+  width: 150px;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 15px;
+}
+.success-wrapper .success .cards .success-card button i {
+  margin-left: 8px;
+}
+.success-wrapper .success .cards .success-card button:hover {
+  background-color: white;
+  color: #FF2359;
+  border: 1px solid #FF2359;
+}
+.success-wrapper .success .cards .success-card div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
 .placement-wrapper {
   background-color: #1a1a1a;
 }
@@ -2068,11 +2162,24 @@ a.morelink {
 .footer-wrapper .footer .sec2 i {
   margin-right: 10px;
 }
-.footer-wrapper .footer .sec2 div i, .footer-wrapper .footer .sec2 div svg {
-  font-size: 20px;
+.footer-wrapper .footer .sec2 div {
+  display: flex;
+  gap: 15px;
+}
+.footer-wrapper .footer .sec2 div span {
+  width: 40px !important;
+  display: block;
+  height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 50%;
-  padding: 12px;
+  position: relative;
+}
+.footer-wrapper .footer .sec2 div i, .footer-wrapper .footer .sec2 div svg {
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .footer-wrapper .footer .sec2 div svg {
   height: 20px;
