@@ -13,6 +13,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 
     <link rel="stylesheet" type="text/css" href="./src/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <script>
         /*to prevent Firefox FOUC, this must be here*/
         let FF_FOUC_FIX;
@@ -37,7 +39,8 @@
                 <nav>
                     <div class="nav-main container">
                         <div class="logo">
-                            <img src="./assets/public/images/Artboard6.png" width="100px" alt="">
+                            <!-- <img src="./assets/public/images/Artboard6.png" width="100px" alt=""> -->
+                            <img src="./assets/public/images/Artboard 6.png" width="100px" alt="">
                         </div>
                         <div class="course">
                             <button> Courses<i class=" fa-solid fa-chevron-down"></i></button>
@@ -66,13 +69,48 @@
 
 
         <div class="main">
-            <div class="hero">
-                <div class="banner-wrapper">
-                    <!-- <img src="./assets/public/images/banner.jpg" alt=""> -->
-                    <h1>Advance Your
+            <!-- <div class="hero" >
+                <div class="banner-wrapper" style="background-image: url(./assets/public/images/banner.jpg);">
+                    <img src="./assets/public/images/banner.jpg" alt="">
+                    <h1 class="hero-text">Advance Your
                         Career, Learn <br>
                         <span>In-demand Skills.</span>
                     </h1>
+                </div>
+            </div> -->
+            <div class="hero2-wrapper">
+                <div class="hero2">
+                    <div class="left">
+                        <h1 class="hero-text">Advance Your
+                            Career, Learn <br>
+                            <span>In-demand Skills.</span>
+                        </h1>
+                        <ul>
+
+                            <li>Courses that make you Industry-ready!</li>
+                            <li>Curriculum Designed by best in the Industry!</li>
+                            <li>Build your work portfolio to Outshine others!</li>
+                            <li>Get Job Offers from top recruiters after completion of course.</li>
+                            <li>ClassRoom Training and Personalized attention to every student.</li>
+                            <li>Learn your way to a more fulfilling & higher paying career in tech. </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <div class="box">
+                            <h2>Get Call from US</h2>
+                            <form action="">
+                                <input type="text" placeholder="Name">
+                                <input type="text" placeholder="Email">
+                                <input type="text" placeholder="Mobile Number">
+                                <button>Submit</button>
+                            </form>
+                            <label style="margin-left: 10px;">By providing your contact details, you agree to our
+                                <a href="#"> Terms of use</a> &
+                                <a href="#">Privacy Policy</a>
+                            </label>
+
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="companies-wrapper">
@@ -88,6 +126,34 @@
                 </div>
                 <div class="cta-viewall"><button>View all</button></div>
             </div>
+            <div class="courses-wrapper">
+                <div class="courses">
+                    <h1>Courses</h1>
+                    <ul id="tabs-nav">
+                        <li><a href="#tab1">Popular</a></li>
+                        <li><a href="#tab2">Offline</a></li>
+                        <li><a href="#tab3">Online</a></li>
+                    </ul>
+                    <div id="tabs-content">
+                        <div id="tab1" class="tab-content">
+                            <div class="courses-card-wrapper" id="popularCoursesData">
+
+                            </div>
+                        </div>
+                        <div id="tab2" class="tab-content">
+                            <div class="courses-card-wrapper" id="offlineCoursesData">
+
+                            </div>
+                        </div>
+                        <div id="tab3" class="tab-content">
+                            <div class="courses-card-wrapper" id="onlineCoursesData">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
             <div class="core-values-wrapper ">
                 <div class="core-values ">
                     <div class="content-wrap ">
@@ -95,15 +161,22 @@
                             <h2>Core Values !</h2>
                             <div class="tab">
 
-                                <div class="active"><div><i class="bi bi-1-square"></i></div><div> <span>Teaching is a Nobel Deed</span></div></div>
-                                <div class="content-text" style="display: block;"> We have never considered this training field as ‘Just another
+                                <div class="active head">
+                                    <div><i class="bi bi-1-square"></i></div>
+                                    <div> <span>Teaching is a Nobel Deed</span></div>
+                                </div>
+                                <div class="content-text" style="display: block;"> We have never considered this
+                                    training field as ‘Just another
                                     business to make money’, as we know that it’s much more than that. Teaching is a
                                     noble deed, & we strive very hard to protect the sacredness surrounding that deed.
                                 </div>
                             </div>
                             <div class="tab">
 
-                                <div><div><i class="bi bi-2-square"></i></div><div><span>Share Maximum Knowledge</span></div></div>
+                                <div class="head">
+                                    <div><i class="bi bi-2-square"></i></div>
+                                    <div><span>Share Maximum Knowledge</span></div>
+                                </div>
                                 <div class="content-text">We understand that we have enormous responsibility towards our
                                     students in helping them realize their dreams; so, we are always in the lookout for
                                     ways to share maximum knowledge with them.</div>
@@ -111,14 +184,20 @@
 
                             <div class="tab">
 
-                                <div><div><i class="bi bi-3-square"></i></div><div><span>Education is a potent tool</span></div></div>
+                                <div class="head">
+                                    <div><i class="bi bi-3-square"></i></div>
+                                    <div><span>Education is a potent tool</span></div>
+                                </div>
                                 <div class="content-text">Education is the most potent tool for empowering people, &
                                     this notion would reflect in all our steps throughout the training program.</div>
                             </div>
 
                             <div class="tab">
 
-                                <div><div><i class="bi bi-4-square"></i></div><div><span>Keeping Things Simple</span></div></div>
+                                <div class="head">
+                                    <div><i class="bi bi-4-square"></i></div>
+                                    <div><span>Keeping Things Simple</span></div>
+                                </div>
                                 <div class="content-text">Lastly, we like to keep things simple. We neither offer 10+
                                     certifications nor have any associations with fancy names from the industry. But we
                                     know what is necessary for the aspiring students to start a solid career in their
@@ -132,6 +211,75 @@
 
 
 
+                </div>
+            </div>
+            <div class="success-wrapper">
+                <div class="success">
+                    <h1>Why We Are So Successful
+                        in Placement ?</h1>
+                    <div class="cards">
+                        <div class="success-card" >
+
+                            <div>
+                            <img src="./assets/public/images/asses.png" alt="">
+
+                                <h2> S.O.A.P (Student Output
+                                    Assessment Program)
+                                </h2>
+                                
+                            </div>
+                            <div>
+                                <p>Throughout the course, our students would be assigned a specific number of tasks to
+                                    be completed, which would be assessed to provide constructive feedback to them.</p>
+                                <button>View Student works</button>
+                            </div>
+                        </div>
+                        <div class="success-card" >
+
+                            <div>
+                            <img src="./assets/public/images/placement.png" alt="">
+
+                                <h2>Final Portfolio Development
+
+                                </h2>
+                                
+                            </div>
+                            <p>Most companies insist on seeing the student’s final portfolio before calling them for
+                                an interview; so we assist our students in creating a good quality portfolio.</p>
+
+                        </div>
+                        <div class="success-card">
+
+                            <div>
+                            <img src="./assets/public/images/job portal.png" alt="">
+
+                                <h2> Exclusive Job Portal
+                                </h2>
+                              
+                            </div>
+                            <div>
+                                <p>We have an exclusive Job portal integrated in our site, which our placement team will
+                                    update regularly with current openings in the market. This feature has helped not
+                                    just our fresh batches, but also our alumni students. </p>
+                                <button>View job portal</button>
+                            </div>
+
+                        </div>
+                        <div class="success-card">
+
+                            <div>
+                            <img src="./assets/public/images/inter.png" alt="">
+
+                                <h2> Interview Scheduling
+                                </h2>
+                               
+
+                            </div>
+                            <p>Once our students complete all their assignments in S.O.A.P & his/her final
+                                portfolio, we would start the process of scheduling interviews for them in the
+                                companies that have shared their openings with us.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="placement-wrapper">
@@ -279,11 +427,12 @@
                         <p><i class="bi bi-telephone-fill"></i> +91 9791 3333 50</p>
                         <p> <i class="bi bi-telephone-fill"></i> +04 4443 2133 50</p>
                         <p><i class="bi bi-envelope-fill"></i>info@webdschool.com</p>
-                        <div><i class="fa-brands fa-facebook-f"></i>
-
-                            <i class="fa-brands fa-square-instagram"></i>
-                            <i class="fa-brands fa-linkedin-in"></i><i class="bi bi-twitter"></i><i
-                                class="bi bi-youtube"></i>
+                        <div>
+                            <span><i class="fa-brands fa-facebook-f"></i></span>
+                            <span><i class="fa-brands fa-square-instagram"></i></span>
+                            <span><i class="fa-brands fa-linkedin-in"></i></span>
+                            <span><i class="bi bi-twitter"></i></span>
+                            <span> <i class="bi bi-youtube"></i></span>
                         </div>
                     </div>
                 </div>
@@ -317,13 +466,16 @@
     <script type="text/javascript" src="./assets/plugins/slick-1.8.1/slick/slick.min.js"></script>
 
     <script type="text/javascript" src="./assets/js/navbar.js"></script>
+    <script type="text/javascript" src="./assets/js/courses.js"></script>
     <script type="text/javascript" src="./assets/js/placementsdata.js"></script>
     <script type="text/javascript" src="./assets/js/testimonalcarddata.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="./assets/js/index.js"></script>
 
 
-
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 

@@ -23,6 +23,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
+    
 
 }
 button{
@@ -150,8 +151,11 @@ a{
 @import './assets/scss/Navbar';
 @import './assets/scss/Hero';
 @import './assets/scss/Companies';
+@import './assets/scss/Courses';
 @import './assets/scss/About';
 @import './assets/scss/Corevalues';
+@import './assets/scss/Hero2';
+@import './assets/scss/Success';
 
 @import './assets/scss/Placement';
 @import './assets/scss/About';

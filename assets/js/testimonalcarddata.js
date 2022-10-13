@@ -48,7 +48,19 @@ const testimonalcarddata=[
 
 
 $.each(testimonalcarddata, function (key, e) {
-    $(".student-review-wrapper").append(`<div class="student-review"><div class="student-review-image"><div class="student-review-content-title"><span>` + e.name + `</span><br>`+ " " + '-' + " "  + e.courseNmae + `</div><img src=` + e.image + ` alt=""></div><div class="student-review-content"><div class="student-review-content-description">` + e.review + `</div></div></div> `)
+    $(".student-review-wrapper").append(`
+        <div class="student-review">
+            <div class="student-review-image">
+                <div class="student-review-content-title">
+                    <span>` + e.name + `</span>
+                    <br>`+ " " + '-' + " "  + e.courseNmae + `
+                </div>
+                <img src=` + e.image + ` alt="">
+            </div>
+            <div class="student-review-content">
+                <div class="student-review-content-description">` + e.review + `</div>
+            </div>
+        </div> `)
 });
 
 $.each(testimonalcarddata, function (key, e) {
