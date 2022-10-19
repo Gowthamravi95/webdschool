@@ -1070,7 +1070,6 @@ a.morelink {
 .hero2-wrapper {
   position: relative;
   z-index: 50;
-  height: 700px;
 }
 .hero2-wrapper .hero2 {
   display: flex;
